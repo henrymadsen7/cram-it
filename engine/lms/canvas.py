@@ -81,7 +81,46 @@ class CanvasClient:
         all_results = []
 
         while url:
-            resp = self.session.get(url, params=params, timeout=30)
+            for attempt in range(3):
+                try:
+                    resp = self.session.get(url, params=params, timeout=30)
+                    break
+                except requests.exceptions.ConnectionError as e:
+                    if attempt < 2:
+                        import time
+                        time.sleep(2 ** attempt)
+                        continue
+                    raise ConnectionError(
+                        f"Cannot reach Canvas API at {self.base_url}. "
+                        f"Check your CANVAS_API_URL and network connection.\n"
+                        f"Details: {e}"
+                    ) from e
+                except requests.exceptions.Timeout:
+                    if attempt < 2:
+                        import time
+                        time.sleep(2 ** attempt)
+                        continue
+                    raise TimeoutError(
+                        f"Canvas API timed out after 30s. The server may be slow or "
+                        f"your CANVAS_API_URL ({self.base_url}) may be wrong."
+                    )
+
+            if resp.status_code == 401:
+                raise PermissionError(
+                    "Canvas returned 401 Unauthorized. Your CANVAS_API_TOKEN is "
+                    "invalid or expired. Generate a new one at:\n"
+                    f"  {self.base_url}/profile/settings → '+ New Access Token'"
+                )
+            if resp.status_code == 403:
+                raise PermissionError(
+                    f"Canvas returned 403 Forbidden for {endpoint}. "
+                    "Your token may not have permission for this course."
+                )
+            if resp.status_code == 404:
+                raise FileNotFoundError(
+                    f"Canvas returned 404 for {endpoint}. "
+                    "Check that the course ID exists and you're enrolled in it."
+                )
             resp.raise_for_status()
             data = resp.json()
 

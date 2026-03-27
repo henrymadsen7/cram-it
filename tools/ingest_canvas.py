@@ -200,10 +200,20 @@ def main():
         os.environ["CANVAS_API_TOKEN"] = args.api_token
 
     # Initialize Canvas client
+    print("Connecting to Canvas LMS...")
     try:
         client = CanvasClient()
+        print(f"  ✓ Connected to {client.base_url}")
     except ValueError as e:
-        print(f"ERROR: {e}")
+        print(f"\nERROR: {e}")
+        print("\nTo fix this, set your Canvas credentials:")
+        print("  export CANVAS_API_URL='https://your-school.instructure.com'")
+        print("  export CANVAS_API_TOKEN='your-token-here'")
+        print("\nOr pass them directly:")
+        print(f"  python {sys.argv[0]} --api-url https://... --api-token YOUR_TOKEN --course-id {args.course_id} --output-dir {args.output_dir}")
+        sys.exit(1)
+    except Exception as e:
+        print(f"\nERROR connecting to Canvas: {e}")
         sys.exit(1)
 
     # Fetch course info

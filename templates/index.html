@@ -230,7 +230,10 @@ body{font-family:'IBM Plex Sans',system-ui,sans-serif;background:var(--bg);color
   <div id="pack-selector" class="ucards" style="display:none"></div>
   <div class="ucards" id="login-form">
     <input id="login-username" type="text" placeholder="Enter your username" style="background:var(--s1);border:1px solid var(--bd);color:var(--tx);padding:14px 18px;border-radius:var(--r);font-size:1rem;font-family:inherit;text-align:center;width:100%" onkeydown="if(event.key==='Enter')doLogin()">
+    <input id="login-password" type="password" placeholder="Password" class="hidden" style="background:var(--s1);border:1px solid var(--bd);color:var(--tx);padding:14px 18px;border-radius:var(--r);font-size:1rem;font-family:inherit;text-align:center;width:100%" onkeydown="if(event.key==='Enter')doLogin()">
+    <div id="login-error" class="hidden" style="color:var(--rd);font-size:.8rem;text-align:center"></div>
     <button class="btn" onclick="doLogin()" style="width:100%;padding:14px 24px;font-size:1rem">Start Studying</button>
+    <button id="btn-register" class="hidden" onclick="doRegister()" style="width:100%;padding:10px 24px;font-size:.85rem;background:transparent;border:1px solid var(--bd);color:var(--dm);border-radius:var(--r);cursor:pointer">Create Account</button>
   </div>
 </div>
 
@@ -479,15 +482,48 @@ function selectPack(idx){
 }
 loadPacks();
 
+// === AUTH ===
+let authEnabled=false;
+fetch('/api/auth_status').then(r=>r.json()).then(d=>{
+  authEnabled=d.auth_enabled;
+  if(authEnabled){
+    document.getElementById('login-password').classList.remove('hidden');
+    document.getElementById('btn-register').classList.remove('hidden');
+  }
+}).catch(()=>{});
+
+function showLoginError(msg){
+  const el=document.getElementById('login-error');
+  el.textContent=msg;el.classList.remove('hidden');
+}
+
 // === LOGIN ===
 function doLogin(){
   const inp=document.getElementById('login-username');
   const uid=inp.value.trim();
   if(!uid){inp.focus();return;}
-  login(uid);
+  const pw=document.getElementById('login-password').value;
+  login(uid,pw);
 }
-async function login(uid){
-  U=uid;S=await api('/session',{user_id:uid});
+async function doRegister(){
+  const uid=document.getElementById('login-username').value.trim();
+  const pw=document.getElementById('login-password').value;
+  if(!uid){document.getElementById('login-username').focus();return;}
+  if(authEnabled&&(!pw||pw.length<4)){showLoginError('Password must be at least 4 characters');return;}
+  try{
+    const r=await api('/register',{user_id:uid,password:pw});
+    if(r.error){showLoginError(r.error);return;}
+    login(uid,pw);
+  }catch(e){showLoginError(e.message||'Registration failed');}
+}
+async function login(uid,pw){
+  try{
+    const endpoint=authEnabled?'/login':'/session';
+    const body=authEnabled?{user_id:uid,password:pw}:{user_id:uid};
+    S=await api(endpoint,body);
+    if(S.error){showLoginError(S.error);return;}
+    U=uid;
+  }catch(e){showLoginError(e.message||'Login failed');return;}
   document.getElementById('login').classList.add('hidden');document.getElementById('app').classList.add('show');
   const p=S.preferences||{};
   const packName=activePack?.name||p.tutor_persona||'Cram-It';

@@ -1,0 +1,48 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Syntax check - server.py
+        run: python -m py_compile server.py
+
+      - name: Syntax check - engine/tutor_plugin.py
+        run: python -m py_compile engine/tutor_plugin.py
+
+      - name: Syntax check - engine/db_init.py
+        run: python -m py_compile engine/db_init.py
+
+      - name: Syntax check - engine/similar_generator.py
+        run: python -m py_compile engine/similar_generator.py
+
+      - name: Test DB init
+        run: python -c 'from engine.db_init import init_database; init_database("/tmp/test.db"); print("DB init OK")'
+
+      - name: Validate demo pack JSON
+        run: python -c 'import json; json.load(open("packs/demo-study-skills/questions.json")); print("Demo pack JSON OK")'
+
+      - name: Lint with flake8 (optional)
+        continue-on-error: true
+        run: |
+          pip install flake8
+          flake8 . --max-line-length=120 --ignore=E501,W503,E402

@@ -62,6 +62,7 @@ CREATE TABLE IF NOT EXISTS questions (
 CREATE TABLE IF NOT EXISTS users (
     id            TEXT PRIMARY KEY,
     display_name  TEXT,
+    password_hash TEXT,
     created_at    DATETIME DEFAULT CURRENT_TIMESTAMP
 );
 
@@ -100,11 +101,12 @@ CREATE TABLE IF NOT EXISTS topic_mastery (
 -- Aggregate concept-level mastery
 CREATE TABLE IF NOT EXISTS concept_mastery (
     user_id          TEXT,
-    concept          TEXT,
+    concept_id       TEXT,
     total_attempts   INTEGER DEFAULT 0,
     correct_attempts INTEGER DEFAULT 0,
     mastery_pct      REAL DEFAULT 0,
-    PRIMARY KEY (user_id, concept)
+    proven           INTEGER DEFAULT 0,
+    PRIMARY KEY (user_id, concept_id)
 );
 
 -- FSRS spaced-repetition state per (user, question)
@@ -128,7 +130,8 @@ CREATE TABLE IF NOT EXISTS sessions (
     started_at         DATETIME DEFAULT CURRENT_TIMESTAMP,
     ended_at           DATETIME,
     questions_answered INTEGER DEFAULT 0,
-    correct_count      INTEGER DEFAULT 0
+    correct_count      INTEGER DEFAULT 0,
+    active             INTEGER DEFAULT 1
 );
 
 -- Intake / diagnostic responses

@@ -384,8 +384,91 @@ def slide_fig(fn):
     return send_from_directory("static/slide_graphs", fn)
 
 # === CORE QUIZ API ===
+# === OPTIONAL AUTH ===
+# When CRAM_IT_AUTH=true, users must register/login with a password.
+# When disabled (default), username-only login for easy demos.
+AUTH_ENABLED = os.environ.get("CRAM_IT_AUTH", "").lower() in ("true", "1", "yes")
+
+
+@app.route("/api/register", methods=["POST"])
+def register():
+    """Register a new user with password (only when auth is enabled)."""
+    d = request.json
+    user_id = d.get("user_id", "").strip()
+    password = d.get("password", "")
+
+    if not user_id:
+        return jsonify({"error": "Username required"}), 400
+
+    if AUTH_ENABLED:
+        if not password or len(password) < 4:
+            return jsonify({"error": "Password must be at least 4 characters"}), 400
+
+        db = sqlite3.connect(str(DB_PATH))
+        cur = db.cursor()
+        cur.execute("SELECT id FROM users WHERE id = ?", (user_id,))
+        if cur.fetchone():
+            db.close()
+            return jsonify({"error": "Username already taken"}), 409
+
+        from werkzeug.security import generate_password_hash
+        pw_hash = generate_password_hash(password)
+        cur.execute("INSERT INTO users (id, display_name, password_hash) VALUES (?, ?, ?)",
+                    (user_id, user_id, pw_hash))
+        db.commit()
+        db.close()
+    else:
+        # No-auth mode: just ensure user exists
+        db = sqlite3.connect(str(DB_PATH))
+        cur = db.cursor()
+        cur.execute("INSERT OR IGNORE INTO users (id, display_name) VALUES (?, ?)",
+                    (user_id, user_id))
+        db.commit()
+        db.close()
+
+    return jsonify({"success": True, "user_id": user_id})
+
+
+@app.route("/api/login", methods=["POST"])
+def api_login():
+    """Authenticate a user. Returns session data on success."""
+    d = request.json
+    user_id = d.get("user_id", "").strip()
+    password = d.get("password", "")
+
+    if not user_id:
+        return jsonify({"error": "Username required"}), 400
+
+    if AUTH_ENABLED:
+        db = sqlite3.connect(str(DB_PATH))
+        db.row_factory = sqlite3.Row
+        cur = db.cursor()
+        cur.execute("SELECT id, password_hash FROM users WHERE id = ?", (user_id,))
+        row = cur.fetchone()
+        db.close()
+
+        if not row:
+            return jsonify({"error": "User not found. Register first."}), 401
+
+        pw_hash = row["password_hash"]
+        if pw_hash:
+            from werkzeug.security import check_password_hash
+            if not check_password_hash(pw_hash, password):
+                return jsonify({"error": "Wrong password"}), 401
+        # Users without a password_hash (legacy) can log in with any password
+
+    return jsonify(json.loads(quiz_session_start(user_id)))
+
+
+@app.route("/api/auth_status")
+def auth_status():
+    """Tell the frontend whether password auth is enabled."""
+    return jsonify({"auth_enabled": AUTH_ENABLED})
+
+
 @app.route("/api/session", methods=["POST"])
 def session():
+    """Legacy session endpoint — still works but /api/login is preferred when auth is on."""
     return jsonify(json.loads(quiz_session_start(request.json["user_id"])))
 
 @app.route("/api/quiz", methods=["POST"])
@@ -1775,6 +1858,34 @@ def api_pack_select():
         return jsonify({"success": True, "pack": PACK_CONFIG})
     except Exception as e:
         return jsonify({"error": str(e)}), 404
+
+
+@app.route("/api/pack/export/<pack_name>")
+def api_pack_export(pack_name):
+    """Export a course pack as a downloadable ZIP file."""
+    import zipfile, io
+    pack_dir = PACKS_DIR / pack_name
+    if not pack_dir.exists() or not (pack_dir / "pack.yaml").exists():
+        return jsonify({"error": f"Pack '{pack_name}' not found"}), 404
+
+    buf = io.BytesIO()
+    with zipfile.ZipFile(buf, 'w', zipfile.ZIP_DEFLATED) as zf:
+        for root, dirs, files in os.walk(str(pack_dir)):
+            # Skip __pycache__ and hidden dirs
+            dirs[:] = [d for d in dirs if not d.startswith('.') and d != '__pycache__']
+            for fname in files:
+                if fname.startswith('.'):
+                    continue
+                fpath = os.path.join(root, fname)
+                arcname = os.path.relpath(fpath, str(pack_dir))
+                zf.write(fpath, arcname)
+    buf.seek(0)
+
+    return Response(
+        buf.getvalue(),
+        mimetype='application/zip',
+        headers={'Content-Disposition': f'attachment; filename={pack_name}.zip'}
+    )
 
 
 @app.route("/api/health")
