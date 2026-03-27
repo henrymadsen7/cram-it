@@ -1,0 +1,8 @@
+{
+  "spaced_repetition": 0.20,
+  "retrieval_practice": 0.20,
+  "interleaving": 0.15,
+  "elaboration": 0.15,
+  "metacognition": 0.15,
+  "desirable_difficulties": 0.15
+}

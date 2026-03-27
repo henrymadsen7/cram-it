@@ -1,0 +1,19 @@
+name: 'Study Skills 101'
+short_name: 'STUDY 101'
+description: 'A demo course pack to help you get started with Cram-It. Contains 10 questions about effective study techniques.'
+textbook: 'Make It Stick: The Science of Successful Learning'
+professor: 'Dr. Example'
+
+exam_format:
+  questions: 10
+  time_minutes: 20
+  question_types:
+    - multiple_choice
+  points_each: 10
+
+chapters: [1, 2, 3]
+notes_allowed: false
+calculator: false
+
+ai_persona: 'You are a study skills coach. Help students learn HOW to study effectively using evidence-based techniques like spaced repetition, interleaving, retrieval practice, and elaboration.'
+ai_persona_name: 'Coach'

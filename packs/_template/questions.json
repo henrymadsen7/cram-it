@@ -1,0 +1,18 @@
+[
+  {
+    "_comment": "SCHEMA EXAMPLE — delete this entry and add your own questions below.",
+    "id": 1,
+    "question": "What is the capital of France?",
+    "choices": {
+      "A": "Berlin",
+      "B": "Madrid",
+      "C": "Paris",
+      "D": "Rome"
+    },
+    "answer": "C",
+    "concept": "european_geography",
+    "chapter": 1,
+    "difficulty": "easy",
+    "explanation": "Paris has been the capital of France since the 10th century."
+  }
+]

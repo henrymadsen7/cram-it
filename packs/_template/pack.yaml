@@ -1,0 +1,54 @@
+# ============================================================
+# Cram-It Course Pack Configuration
+# ============================================================
+# Copy this entire _template/ folder to create a new pack.
+# Rename the folder to your-course-slug (lowercase, hyphens).
+# Fill in every field below.
+# ============================================================
+
+# Full course name (shown in UI)
+name: 'Your Course Name'
+
+# Abbreviated name (shown in headers, battle mode, etc.)
+short_name: 'COURSE 101'
+
+# One-liner shown on the pack-select screen
+description: 'Briefly describe what this pack covers and how many questions it has.'
+
+# Primary textbook (used by AI for context)
+textbook: 'Title of the Textbook, Edition'
+
+# Professor or instructor name
+professor: 'Dr. Last Name'
+
+# Exam format details
+exam_format:
+  questions: 50                          # Total questions on the exam
+  time_minutes: 60                       # Time limit in minutes
+  question_types:                        # List of question types
+    - multiple_choice
+    # - true_false
+    # - short_answer
+    # - fill_in_the_blank
+    # - matching
+    # - essay
+  points_each: 2                         # Points per question
+
+# Which chapters / units this pack covers
+chapters: [1, 2, 3, 4, 5]
+
+# Are notes allowed during the exam?
+notes_allowed: false
+
+# Is a calculator allowed during the exam?
+calculator: false
+
+# System prompt given to the AI tutor for this pack
+ai_persona: >
+  You are a knowledgeable tutor for this course. Help students
+  understand concepts deeply. Use analogies, examples, and
+  Socratic questioning. Always be encouraging but honest when
+  the student makes a mistake.
+
+# Display name for the AI tutor (shown in chat bubbles)
+ai_persona_name: 'Tutor'

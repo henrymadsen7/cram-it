@@ -1,0 +1,110 @@
+[
+  {
+    "front": "What is spaced repetition?",
+    "back": "A study technique where you review material at increasing intervals over time, exploiting the spacing effect to move information into long-term memory.",
+    "concept": "spaced_repetition",
+    "chapter": 1
+  },
+  {
+    "front": "What is the spacing effect?",
+    "back": "The robust finding that information studied in spaced-out sessions is retained much better than information studied in a single massed session (cramming).",
+    "concept": "spaced_repetition",
+    "chapter": 1
+  },
+  {
+    "front": "Why does cramming feel effective even though it isn't?",
+    "back": "Cramming produces strong short-term recall, creating a fluency illusion. But without spacing, the memories decay rapidly. Students mistake short-term familiarity for durable learning.",
+    "concept": "spaced_repetition",
+    "chapter": 1
+  },
+  {
+    "front": "What is retrieval practice (the testing effect)?",
+    "back": "The finding that actively pulling information from memory — via self-testing, flashcards, or free recall — strengthens memory more than passive review like re-reading.",
+    "concept": "retrieval_practice",
+    "chapter": 1
+  },
+  {
+    "front": "Why is retrieval practice more effective than re-reading?",
+    "back": "Retrieval forces the brain to reconstruct the memory, strengthening neural pathways. Re-reading only produces shallow recognition, not the deep processing needed for durable recall.",
+    "concept": "retrieval_practice",
+    "chapter": 1
+  },
+  {
+    "front": "What is free recall and how can you use it to study?",
+    "back": "After reading a chapter, close the book and write down everything you can remember. Then check what you missed. This is one of the simplest and most powerful retrieval practice techniques.",
+    "concept": "retrieval_practice",
+    "chapter": 1
+  },
+  {
+    "front": "What is interleaving?",
+    "back": "Mixing different topics, problem types, or skills within a single study session, rather than doing blocked practice (finishing all of one type before starting another).",
+    "concept": "interleaving",
+    "chapter": 2
+  },
+  {
+    "front": "Why does interleaving work even though it feels harder?",
+    "back": "Interleaving forces the brain to discriminate between problem types and select the right strategy, building stronger and more flexible knowledge. Blocked practice feels fluent but doesn't build discrimination skills.",
+    "concept": "interleaving",
+    "chapter": 2
+  },
+  {
+    "front": "What is elaboration as a study strategy?",
+    "back": "Generating explanations, asking 'how' and 'why' questions, connecting new material to things you already know, and creating your own examples to build richer mental models.",
+    "concept": "elaboration",
+    "chapter": 2
+  },
+  {
+    "front": "What is the Feynman Technique?",
+    "back": "1) Pick a concept. 2) Explain it in simple language as if teaching a beginner. 3) Identify gaps where your explanation breaks down. 4) Go back to the source and fill the gaps. Repeat.",
+    "concept": "elaboration",
+    "chapter": 2
+  },
+  {
+    "front": "What is self-explanation?",
+    "back": "Pausing while reading to explain to yourself why each step or statement is true. Students who self-explain learn more deeply than those who just read straight through.",
+    "concept": "elaboration",
+    "chapter": 2
+  },
+  {
+    "front": "What are desirable difficulties?",
+    "back": "Challenges introduced during learning (spacing, interleaving, retrieval) that slow initial performance but enhance long-term retention and transfer. Coined by Robert Bjork.",
+    "concept": "desirable_difficulties",
+    "chapter": 2
+  },
+  {
+    "front": "Are all difficulties desirable?",
+    "back": "No. A difficulty is only 'desirable' if it triggers beneficial cognitive processing (like retrieval or discrimination). Unrelated obstacles (noisy room, unreadable font beyond a point) are just obstacles.",
+    "concept": "desirable_difficulties",
+    "chapter": 2
+  },
+  {
+    "front": "What is metacognition?",
+    "back": "Thinking about your own thinking — monitoring what you know and don't know, judging the effectiveness of your strategies, and adjusting your approach accordingly.",
+    "concept": "metacognition",
+    "chapter": 3
+  },
+  {
+    "front": "What is the fluency illusion?",
+    "back": "The mistaken belief that because material feels familiar (from re-reading), you actually know it well. It is a metacognitive error — confusing recognition with recall ability.",
+    "concept": "metacognition",
+    "chapter": 3
+  },
+  {
+    "front": "What is calibration in the context of studying?",
+    "back": "How accurately your confidence matches your actual performance. Well-calibrated students know what they know and what they don't. Poorly calibrated students are overconfident or underconfident.",
+    "concept": "metacognition",
+    "chapter": 3
+  },
+  {
+    "front": "How does sleep affect memory consolidation?",
+    "back": "During sleep (especially slow-wave and REM stages), the brain replays and consolidates memories, reorganizing and strengthening neural connections. Sleep deprivation significantly impairs learning.",
+    "concept": "desirable_difficulties",
+    "chapter": 3
+  },
+  {
+    "front": "Name three passive study strategies that feel effective but are NOT.",
+    "back": "1) Re-reading notes or the textbook. 2) Highlighting or underlining. 3) Copying definitions word-for-word. All create familiarity without deep processing or retrieval.",
+    "concept": "retrieval_practice",
+    "chapter": 1
+  }
+]

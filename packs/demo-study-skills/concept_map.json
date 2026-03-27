@@ -1,0 +1,38 @@
+{
+  "spaced_repetition": {
+    "name": "Spaced Repetition",
+    "description": "Distributing study sessions over time with increasing intervals to exploit the spacing effect and strengthen long-term retention.",
+    "chapter": 1,
+    "prerequisites": []
+  },
+  "retrieval_practice": {
+    "name": "Retrieval Practice",
+    "description": "Actively pulling information from memory (via quizzes, flashcards, or free recall) rather than passively re-reading, which strengthens memory traces.",
+    "chapter": 1,
+    "prerequisites": []
+  },
+  "interleaving": {
+    "name": "Interleaving",
+    "description": "Mixing different topics or problem types within a single study session instead of practicing one type at a time (blocked practice).",
+    "chapter": 2,
+    "prerequisites": ["retrieval_practice"]
+  },
+  "elaboration": {
+    "name": "Elaboration",
+    "description": "Generating explanations, connections to prior knowledge, and personal examples to build richer mental models of new material.",
+    "chapter": 2,
+    "prerequisites": ["retrieval_practice"]
+  },
+  "metacognition": {
+    "name": "Metacognition",
+    "description": "Thinking about your own thinking — monitoring comprehension, judging what you know vs. don't know, and choosing effective strategies.",
+    "chapter": 3,
+    "prerequisites": ["retrieval_practice", "elaboration"]
+  },
+  "desirable_difficulties": {
+    "name": "Desirable Difficulties",
+    "description": "Introducing challenges (spacing, interleaving, retrieval) that slow initial learning but produce stronger long-term retention and transfer.",
+    "chapter": 2,
+    "prerequisites": ["spaced_repetition", "interleaving"]
+  }
+}

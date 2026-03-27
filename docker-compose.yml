@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  cram-it:
+    build: .
+    container_name: cram-it
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./data:/app/data
+      - ./packs:/app/packs
+    env_file:
+      - .env
+    restart: unless-stopped

@@ -1,0 +1,402 @@
+{
+  "explicit_vs_implicit_costs": {
+    "name": "Explicit vs Implicit Costs",
+    "chapter": 14,
+    "prereqs": [],
+    "keywords": [
+      "explicit",
+      "implicit",
+      "opportunity cost",
+      "accounting profit",
+      "economic profit"
+    ],
+    "description": "Explicit costs are direct payments. Implicit costs are opportunity costs of resources you own. Economic profit = TR - explicit - implicit."
+  },
+  "production_function_diminishing_mp": {
+    "name": "Production Function & Diminishing MP",
+    "chapter": 14,
+    "prereqs": [],
+    "keywords": [
+      "production function",
+      "diminishing",
+      "marginal product",
+      "additional worker"
+    ],
+    "description": "More inputs -> more output, but at a decreasing rate. Diminishing MP drives U-shaped cost curves."
+  },
+  "cost_curve_shapes": {
+    "name": "Cost Curve Shapes (MC, ATC, AVC, AFC)",
+    "chapter": 14,
+    "prereqs": [
+      "production_function_diminishing_mp"
+    ],
+    "keywords": [
+      "MC",
+      "ATC",
+      "AVC",
+      "AFC",
+      "U-shaped",
+      "cost curve",
+      "efficient scale",
+      "marginal cost"
+    ],
+    "description": "MC crosses ATC and AVC at their minimums. AFC always declines. MC = W/MPL."
+  },
+  "economies_of_scale": {
+    "name": "Economies & Diseconomies of Scale",
+    "chapter": 14,
+    "prereqs": [
+      "cost_curve_shapes"
+    ],
+    "keywords": [
+      "economies of scale",
+      "diseconomies",
+      "long run",
+      "LRATC"
+    ],
+    "description": "Long-run ATC falls (economies), is flat (constant returns), or rises (diseconomies)."
+  },
+  "competitive_firm_price_taker": {
+    "name": "Competitive Firm as Price Taker",
+    "chapter": 15,
+    "prereqs": [],
+    "keywords": [
+      "price taker",
+      "competitive firm",
+      "competitive market",
+      "free entry",
+      "identical"
+    ],
+    "description": "Many firms, identical products, free entry. MR = P. Firm can sell all it wants at market price."
+  },
+  "profit_max_mr_equals_mc": {
+    "name": "Profit Maximization: MR = MC",
+    "chapter": 15,
+    "prereqs": [
+      "cost_curve_shapes",
+      "competitive_firm_price_taker"
+    ],
+    "keywords": [
+      "maximize profit",
+      "MR = MC",
+      "marginal revenue equals marginal cost",
+      "profit-maximizing"
+    ],
+    "description": "All firms maximize profit where MR = MC. For competitive firms, P = MR = MC."
+  },
+  "shutdown_decision": {
+    "name": "Shutdown vs Exit Decision",
+    "chapter": 15,
+    "prereqs": [
+      "cost_curve_shapes",
+      "profit_max_mr_equals_mc"
+    ],
+    "keywords": [
+      "shut down",
+      "shutdown",
+      "exit",
+      "P < AVC",
+      "TR < VC",
+      "sunk cost"
+    ],
+    "description": "Short run: shut down if P < AVC. Long run: exit if P < ATC. Sunk costs are irrelevant."
+  },
+  "supply_curve_and_long_run_eq": {
+    "name": "Supply Curve & Long-Run Equilibrium",
+    "chapter": 15,
+    "prereqs": [
+      "shutdown_decision"
+    ],
+    "keywords": [
+      "supply curve",
+      "long run",
+      "zero profit",
+      "entry",
+      "exit",
+      "P = ATC"
+    ],
+    "description": "Supply = MC above AVC. Long run: entry/exit drives P = min ATC, zero economic profit."
+  },
+  "monopoly_mr_below_demand": {
+    "name": "Monopoly: MR < P (below demand)",
+    "chapter": 16,
+    "prereqs": [
+      "profit_max_mr_equals_mc"
+    ],
+    "keywords": [
+      "monopolist",
+      "MR",
+      "below demand",
+      "downward sloping",
+      "no supply curve"
+    ],
+    "description": "Monopolist faces market demand. To sell more, must lower price on ALL units. So MR < P."
+  },
+  "monopoly_pricing_two_step": {
+    "name": "Monopoly Pricing (find Q at MR=MC, then P from demand)",
+    "chapter": 16,
+    "prereqs": [
+      "monopoly_mr_below_demand"
+    ],
+    "keywords": [
+      "monopoly price",
+      "profit-maximizing price",
+      "profit-maximizing quantity",
+      "demand curve"
+    ],
+    "description": "Step 1: find Q where MR = MC. Step 2: go up to demand curve for P. Profit = (P-ATC)*Q."
+  },
+  "natural_monopoly_regulation": {
+    "name": "Natural Monopoly & Regulation",
+    "chapter": 16,
+    "prereqs": [
+      "monopoly_pricing_two_step",
+      "cost_curve_shapes"
+    ],
+    "keywords": [
+      "natural monopoly",
+      "regulation",
+      "declining ATC",
+      "P = MC causes losses"
+    ],
+    "description": "ATC always declining. Regulate at MC -> firm loses money. Regulate at ATC -> breaks even but inefficient."
+  },
+  "price_discrimination": {
+    "name": "Price Discrimination",
+    "chapter": 16,
+    "prereqs": [
+      "monopoly_pricing_two_step"
+    ],
+    "keywords": [
+      "price discrimination",
+      "willingness to pay",
+      "perfect price discrimination",
+      "consumer surplus"
+    ],
+    "description": "Perfect: MR = P for each unit, captures all surplus, no deadweight loss."
+  },
+  "monopolistic_competition_sr_lr": {
+    "name": "Monopolistic Competition (SR profit, LR zero profit, P>MC always)",
+    "chapter": 17,
+    "prereqs": [
+      "monopoly_pricing_two_step",
+      "supply_curve_and_long_run_eq"
+    ],
+    "keywords": [
+      "monopolistically competitive",
+      "monopolistic competition",
+      "differentiated",
+      "P > MC",
+      "zero profit long run",
+      "excess capacity"
+    ],
+    "description": "SR: like monopoly, can earn profit. LR: entry -> zero profit, P=ATC, but P>MC always."
+  },
+  "game_theory_nash_dominant": {
+    "name": "Game Theory: Nash Equilibrium & Dominant Strategy",
+    "chapter": 18,
+    "prereqs": [],
+    "keywords": [
+      "nash",
+      "dominant strategy",
+      "payoff",
+      "game",
+      "prisoner",
+      "best response"
+    ],
+    "description": "Nash: each player's strategy is best given the other's. Dominant: best regardless of opponent."
+  },
+  "cartel_instability": {
+    "name": "Cartel Instability (Prisoner's Dilemma)",
+    "chapter": 18,
+    "prereqs": [
+      "game_theory_nash_dominant"
+    ],
+    "keywords": [
+      "cartel",
+      "duopoly",
+      "breaks down",
+      "cheat",
+      "cooperat"
+    ],
+    "description": "Individual incentive to cheat -> cartels break down. When cartel breaks: output rises, price falls."
+  },
+  "vmp_and_labor_demand": {
+    "name": "VMP = P*MPL and Labor Demand",
+    "chapter": 19,
+    "prereqs": [
+      "production_function_diminishing_mp"
+    ],
+    "keywords": [
+      "VMP",
+      "value of marginal product",
+      "labor demand",
+      "hire until VMP = wage"
+    ],
+    "description": "VMP = P * MPL. Hire until VMP = W. VMP curve IS labor demand."
+  },
+  "labor_supply_shifts": {
+    "name": "Labor Supply/Demand Shifts & Wage Determination",
+    "chapter": 19,
+    "prereqs": [
+      "vmp_and_labor_demand"
+    ],
+    "keywords": [
+      "wage",
+      "labor supply",
+      "labor demand",
+      "equilibrium wage",
+      "compensating",
+      "efficiency wage",
+      "minimum wage",
+      "backward"
+    ],
+    "description": "Shifts in VMP or labor supply change equilibrium wages. Min wage above eq -> structural unemployment."
+  },
+  "discrimination_and_human_capital": {
+    "name": "Discrimination, Human Capital, Signaling",
+    "chapter": 20,
+    "prereqs": [
+      "vmp_and_labor_demand"
+    ],
+    "keywords": [
+      "discrimination",
+      "human capital",
+      "signaling",
+      "screening",
+      "wage gap"
+    ],
+    "description": "Discrimination lowers demand for targeted group. Education may signal ability (not just build it)."
+  },
+  "budget_constraint_intercepts": {
+    "name": "Budget Constraint & Intercepts",
+    "chapter": 22,
+    "prereqs": [],
+    "keywords": [
+      "budget constraint",
+      "income",
+      "intercept",
+      "affordable",
+      "spending"
+    ],
+    "description": "Income = Px*X + Py*Y. X-intercept = I/Px. Y-intercept = I/Py. Slope = -Px/Py."
+  },
+  "indifference_curves_mrs": {
+    "name": "Indifference Curves & MRS",
+    "chapter": 22,
+    "prereqs": [
+      "budget_constraint_intercepts"
+    ],
+    "keywords": [
+      "indifference",
+      "MRS",
+      "bowed inward",
+      "convex",
+      "don't cross"
+    ],
+    "description": "Downward sloping, bowed inward, never cross. MRS = rate willing to trade X for Y."
+  },
+  "optimal_choice_tangency": {
+    "name": "Optimal Choice: MRS = Px/Py (tangency)",
+    "chapter": 22,
+    "prereqs": [
+      "budget_constraint_intercepts",
+      "indifference_curves_mrs"
+    ],
+    "keywords": [
+      "optimal",
+      "tangency",
+      "MRS = Px/Py",
+      "MUx/Px = MUy/Py"
+    ],
+    "description": "Best affordable bundle is where highest IC touches budget line. MRS = Px/Py."
+  },
+  "income_substitution_effects": {
+    "name": "Income & Substitution Effects",
+    "chapter": 22,
+    "prereqs": [
+      "optimal_choice_tangency"
+    ],
+    "keywords": [
+      "income effect",
+      "substitution effect",
+      "Giffen",
+      "normal",
+      "inferior",
+      "backward-bending"
+    ],
+    "description": "Price change -> substitution (buy more of cheaper) + income (purchasing power). Backward labor supply if income > substitution."
+  },
+  "moral_hazard_adverse_selection": {
+    "name": "Moral Hazard, Adverse Selection, Principal-Agent",
+    "chapter": 23,
+    "prereqs": [],
+    "keywords": [
+      "moral hazard",
+      "adverse selection",
+      "principal",
+      "agent",
+      "asymmetric",
+      "March Madness"
+    ],
+    "description": "Moral hazard: risk-taking after deal. Adverse selection: wrong types before deal."
+  },
+  "voting_condorcet_arrow": {
+    "name": "Voting: Condorcet Paradox & Arrow's Theorem",
+    "chapter": 23,
+    "prereqs": [],
+    "keywords": [
+      "voting",
+      "Condorcet",
+      "Arrow",
+      "pairwise",
+      "transitive",
+      "median voter",
+      "cyclical"
+    ],
+    "description": "Majority voting can be cyclical (intransitive). No perfect voting system exists (Arrow)."
+  },
+  "gdp_real_nominal_deflator": {
+    "name": "GDP: Real vs Nominal, Deflator",
+    "chapter": 24,
+    "prereqs": [],
+    "keywords": [
+      "GDP",
+      "nominal",
+      "real",
+      "deflator",
+      "C + I + G + NX"
+    ],
+    "description": "GDP = C+I+G+NX. Real GDP = Nominal/(Deflator/100). Only final goods count."
+  },
+  "cpi_inflation_real_interest": {
+    "name": "CPI, Inflation Adjustment, Real Interest Rate",
+    "chapter": 25,
+    "prereqs": [
+      "gdp_real_nominal_deflator"
+    ],
+    "keywords": [
+      "CPI",
+      "inflation",
+      "real interest",
+      "nominal interest",
+      "price index",
+      "deflation"
+    ],
+    "description": "Real rate = Nominal - Inflation. CPI adjusts dollars across time. Deflation: real > nominal."
+  },
+  "unemployment_types_measurement": {
+    "name": "Unemployment: Types & Measurement",
+    "chapter": 29,
+    "prereqs": [],
+    "keywords": [
+      "unemployment rate",
+      "labor force",
+      "participation",
+      "frictional",
+      "structural",
+      "natural rate"
+    ],
+    "description": "UR = U/(E+U). LFPR = (E+U)/Pop. Frictional=matching, Structural=above-eq wages."
+  }
+}

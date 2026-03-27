@@ -1,0 +1,152 @@
+[
+  {
+    "id": 1,
+    "question": "A student has an exam in 30 days. Which study schedule is MOST supported by cognitive science research?",
+    "choices": {
+      "A": "Study everything the night before the exam in one long session",
+      "B": "Study a little each day, spreading sessions across the full 30 days",
+      "C": "Study intensely for the first 3 days then stop",
+      "D": "Wait until you feel motivated, then study in one big block"
+    },
+    "answer": "B",
+    "concept": "spaced_repetition",
+    "chapter": 1,
+    "difficulty": "easy",
+    "explanation": "Spaced repetition — distributing study sessions over time — produces far stronger long-term retention than massed practice (cramming). The spacing effect is one of the most robust findings in learning science."
+  },
+  {
+    "id": 2,
+    "question": "The 'testing effect' refers to the finding that:",
+    "choices": {
+      "A": "Students who take more standardized tests get higher GPAs",
+      "B": "Retrieving information from memory strengthens that memory more than re-reading does",
+      "C": "Test anxiety always improves performance",
+      "D": "Multiple-choice tests are more effective than essay tests"
+    },
+    "answer": "B",
+    "concept": "retrieval_practice",
+    "chapter": 1,
+    "difficulty": "easy",
+    "explanation": "The testing effect (retrieval practice) shows that the act of pulling information out of memory — via quizzes, flashcards, or free recall — strengthens memory traces more effectively than passive review like re-reading or highlighting."
+  },
+  {
+    "id": 3,
+    "question": "Interleaving means:",
+    "choices": {
+      "A": "Studying one topic exhaustively before moving to the next",
+      "B": "Mixing different topics or problem types within a single study session",
+      "C": "Studying with a partner and taking turns",
+      "D": "Reading the textbook and notes at the same time"
+    },
+    "answer": "B",
+    "concept": "interleaving",
+    "chapter": 2,
+    "difficulty": "easy",
+    "explanation": "Interleaving involves mixing different topics, problem types, or skills during practice rather than doing 'blocked' practice (one type at a time). It feels harder but improves the ability to discriminate between concepts and apply the right strategy."
+  },
+  {
+    "id": 4,
+    "question": "Which of the following is the BEST example of elaboration as a study strategy?",
+    "choices": {
+      "A": "Highlighting the key sentences in yellow",
+      "B": "Copying the textbook definitions word-for-word",
+      "C": "Explaining how a new concept connects to something you already know and generating your own examples",
+      "D": "Reading the chapter summary three times"
+    },
+    "answer": "C",
+    "concept": "elaboration",
+    "chapter": 2,
+    "difficulty": "medium",
+    "explanation": "Elaboration involves generating connections between new material and prior knowledge, asking 'why' and 'how' questions, and creating your own examples. This builds richer mental models than passive strategies like highlighting or re-reading."
+  },
+  {
+    "id": 5,
+    "question": "The concept of 'desirable difficulties' suggests that:",
+    "choices": {
+      "A": "The easier studying feels, the more you are learning",
+      "B": "Introducing certain challenges during learning — like spacing and retrieval — slows initial performance but enhances long-term retention",
+      "C": "Students should always study in the hardest possible conditions",
+      "D": "Difficulty is always undesirable and should be minimized"
+    },
+    "answer": "B",
+    "concept": "desirable_difficulties",
+    "chapter": 2,
+    "difficulty": "medium",
+    "explanation": "Robert Bjork coined the term 'desirable difficulties' to describe strategies (spacing, interleaving, retrieval practice) that make learning feel harder in the moment but produce superior long-term retention. Not all difficulty is desirable — it must trigger beneficial cognitive processing."
+  },
+  {
+    "id": 6,
+    "question": "How does sleep contribute to learning and memory?",
+    "choices": {
+      "A": "Sleep has no measurable effect on memory",
+      "B": "Sleep only helps if you study right before bed",
+      "C": "During sleep, the brain consolidates and reorganizes memories, strengthening neural connections formed during study",
+      "D": "Sleeping more than 6 hours actually impairs memory"
+    },
+    "answer": "C",
+    "concept": "desirable_difficulties",
+    "chapter": 3,
+    "difficulty": "easy",
+    "explanation": "During sleep — especially slow-wave and REM stages — the brain replays and consolidates memories, transferring them from short-term to long-term storage. Sleep deprivation significantly impairs both encoding and consolidation of new information."
+  },
+  {
+    "id": 7,
+    "question": "A student re-reads their notes five times and feels very confident. On the exam, they perform poorly. This is BEST explained by:",
+    "choices": {
+      "A": "The exam was unfair",
+      "B": "Fluency illusion — re-reading creates a false sense of mastery without deep processing",
+      "C": "They did not read fast enough",
+      "D": "Re-reading is the most effective study method"
+    },
+    "answer": "B",
+    "concept": "metacognition",
+    "chapter": 3,
+    "difficulty": "medium",
+    "explanation": "Re-reading creates 'fluency' — the material feels familiar, so students overestimate their understanding. This is a metacognitive error. Active retrieval practice (self-testing) gives more accurate feedback about what you actually know vs. what merely feels familiar."
+  },
+  {
+    "id": 8,
+    "question": "The Feynman Technique involves:",
+    "choices": {
+      "A": "Reading the textbook aloud in a group",
+      "B": "Explaining a concept in simple language as if teaching it to someone with no background, then identifying gaps in your explanation",
+      "C": "Memorizing formulas by writing them 100 times",
+      "D": "Studying only from lecture slides"
+    },
+    "answer": "B",
+    "concept": "elaboration",
+    "chapter": 2,
+    "difficulty": "medium",
+    "explanation": "Named after physicist Richard Feynman, this technique involves (1) choosing a concept, (2) explaining it in plain language as if teaching a beginner, (3) identifying gaps where your explanation breaks down, and (4) going back to the source to fill those gaps. It leverages elaboration and self-explanation."
+  },
+  {
+    "id": 9,
+    "question": "Metacognition in the context of studying refers to:",
+    "choices": {
+      "A": "Thinking about your own thinking — monitoring what you know, what you don't know, and adjusting your study strategies accordingly",
+      "B": "Studying while meditating",
+      "C": "Using only one study method consistently",
+      "D": "Memorizing the definitions of cognitive psychology terms"
+    },
+    "answer": "A",
+    "concept": "metacognition",
+    "chapter": 3,
+    "difficulty": "easy",
+    "explanation": "Metacognition is the awareness and regulation of your own cognitive processes. Strong metacognition means you can accurately judge what you know vs. don't know, choose effective strategies, and allocate study time wisely. It is a key predictor of academic success."
+  },
+  {
+    "id": 10,
+    "question": "Research on distributed practice shows that the OPTIMAL gap between study sessions:",
+    "choices": {
+      "A": "Is always exactly 24 hours",
+      "B": "Depends on how far away the test is — longer retention intervals benefit from longer spacing between sessions",
+      "C": "Should be as short as possible — study the same material every hour",
+      "D": "Does not matter as long as total study time is the same"
+    },
+    "answer": "B",
+    "concept": "spaced_repetition",
+    "chapter": 1,
+    "difficulty": "hard",
+    "explanation": "The optimal spacing gap scales with the desired retention interval. If your test is in a week, gaps of 1-2 days work well. If it is in a month, gaps of a week or more are better. This is why spaced-repetition algorithms (like SM-2) dynamically adjust intervals based on performance."
+  }
+]
