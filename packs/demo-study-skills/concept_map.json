@@ -3,36 +3,42 @@
     "name": "Spaced Repetition",
     "description": "Distributing study sessions over time with increasing intervals to exploit the spacing effect and strengthen long-term retention.",
     "chapter": 1,
-    "prerequisites": []
+    "prerequisites": [],
+    "keywords": ["spacing", "spaced", "repetition", "interval", "distributed practice", "Ebbinghaus", "forgetting curve", "Leitner", "Anki", "flashcard", "review schedule", "cramming", "massed practice", "retention", "long-term memory"]
   },
   "retrieval_practice": {
     "name": "Retrieval Practice",
     "description": "Actively pulling information from memory (via quizzes, flashcards, or free recall) rather than passively re-reading, which strengthens memory traces.",
     "chapter": 1,
-    "prerequisites": []
+    "prerequisites": [],
+    "keywords": ["retrieval", "testing effect", "recall", "quiz", "self-testing", "flashcard", "free recall", "practice test", "active recall", "Roediger", "Karpicke", "memory trace", "pull from memory", "recollection"]
   },
   "interleaving": {
     "name": "Interleaving",
     "description": "Mixing different topics or problem types within a single study session instead of practicing one type at a time (blocked practice).",
     "chapter": 2,
-    "prerequisites": ["retrieval_practice"]
+    "prerequisites": ["retrieval_practice"],
+    "keywords": ["interleave", "interleaving", "mixing", "mixed practice", "blocked practice", "shuffling", "alternating", "discrimination", "variety", "problem types", "switching", "compare and contrast", "category learning"]
   },
   "elaboration": {
     "name": "Elaboration",
     "description": "Generating explanations, connections to prior knowledge, and personal examples to build richer mental models of new material.",
     "chapter": 2,
-    "prerequisites": ["retrieval_practice"]
+    "prerequisites": ["retrieval_practice"],
+    "keywords": ["elaboration", "elaborative interrogation", "self-explanation", "Feynman", "analogy", "connection", "prior knowledge", "why questions", "how questions", "teaching", "own words", "paraphrase", "mental model", "deep processing", "meaning-making"]
   },
   "metacognition": {
     "name": "Metacognition",
     "description": "Thinking about your own thinking — monitoring comprehension, judging what you know vs. don't know, and choosing effective strategies.",
     "chapter": 3,
-    "prerequisites": ["retrieval_practice", "elaboration"]
+    "prerequisites": ["retrieval_practice", "elaboration"],
+    "keywords": ["metacognition", "metacognitive", "self-monitoring", "self-regulation", "self-assessment", "calibration", "confidence", "overconfidence", "Dunning-Kruger", "fluency illusion", "judgment of learning", "reflection", "awareness", "study planning", "strategy selection"]
   },
   "desirable_difficulties": {
     "name": "Desirable Difficulties",
     "description": "Introducing challenges (spacing, interleaving, retrieval) that slow initial learning but produce stronger long-term retention and transfer.",
     "chapter": 2,
-    "prerequisites": ["spaced_repetition", "interleaving"]
+    "prerequisites": ["spaced_repetition", "interleaving"],
+    "keywords": ["desirable difficulty", "desirable difficulties", "Bjork", "productive struggle", "challenge", "effortful learning", "generation effect", "context variation", "encoding difficulty", "transfer", "long-term retention", "slowing down", "productive failure", "pre-testing"]
   }
 }

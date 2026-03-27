@@ -148,5 +148,380 @@
     "chapter": 1,
     "difficulty": "hard",
     "explanation": "The optimal spacing gap scales with the desired retention interval. If your test is in a week, gaps of 1-2 days work well. If it is in a month, gaps of a week or more are better. This is why spaced-repetition algorithms (like SM-2) dynamically adjust intervals based on performance."
+  },
+  {
+    "id": 11,
+    "question": "Which flashcard strategy BEST leverages spaced repetition?",
+    "choices": {
+      "A": "Review all cards in order every day regardless of how well you know them",
+      "B": "Use an algorithm that shows cards you got wrong sooner and cards you got right at increasing intervals",
+      "C": "Only review cards you already know well to build confidence",
+      "D": "Go through the entire deck once, then never review again"
+    },
+    "answer": "B",
+    "concept": "spaced_repetition",
+    "chapter": 1,
+    "difficulty": "easy",
+    "explanation": "Spaced-repetition software (like Anki) uses algorithms that schedule reviews based on your performance. Cards you struggle with appear more often, while well-known cards are shown at expanding intervals. This optimizes study time by focusing effort where it is needed most."
+  },
+  {
+    "id": 12,
+    "question": "The 'forgetting curve,' first described by Hermann Ebbinghaus, demonstrates that:",
+    "choices": {
+      "A": "Memory is permanent once information is encoded",
+      "B": "Forgetting happens rapidly at first and then levels off, but each review session flattens the curve",
+      "C": "Forgetting only occurs during sleep",
+      "D": "All memories decay at the same constant rate"
+    },
+    "answer": "B",
+    "concept": "spaced_repetition",
+    "chapter": 1,
+    "difficulty": "medium",
+    "explanation": "Ebbinghaus showed that memory decays exponentially — you lose the most within the first hours and days. However, each time you successfully retrieve and review the material, the forgetting curve becomes shallower, meaning you retain the information longer before needing another review."
+  },
+  {
+    "id": 13,
+    "question": "A student wants to check whether they truly understand a chapter. Which approach provides the MOST accurate self-assessment?",
+    "choices": {
+      "A": "Re-read the chapter and see if it feels familiar",
+      "B": "Close the book and try to write down everything they can remember, then check for gaps",
+      "C": "Look at the chapter headings and assume they know the content",
+      "D": "Ask a friend if the chapter seemed easy"
+    },
+    "answer": "B",
+    "concept": "retrieval_practice",
+    "chapter": 1,
+    "difficulty": "easy",
+    "explanation": "Free recall — closing the book and writing down everything you remember — is both a powerful learning strategy and an accurate diagnostic tool. It reveals exactly what you know and what you have forgotten, unlike re-reading which creates an illusion of familiarity."
+  },
+  {
+    "id": 14,
+    "question": "Which of the following is an example of retrieval practice?",
+    "choices": {
+      "A": "Highlighting key terms in a textbook",
+      "B": "Watching a lecture video twice",
+      "C": "Quizzing yourself with flashcards without looking at the answers first",
+      "D": "Copying notes from a classmate"
+    },
+    "answer": "C",
+    "concept": "retrieval_practice",
+    "chapter": 1,
+    "difficulty": "easy",
+    "explanation": "Retrieval practice requires you to actively pull information from memory. Flashcard self-quizzing forces recall before checking the answer. Highlighting, re-watching, and copying are all passive strategies that do not engage the retrieval process."
+  },
+  {
+    "id": 15,
+    "question": "Research shows that retrieval practice benefits learning MOST when:",
+    "choices": {
+      "A": "The retrieval attempt is easy and effortless",
+      "B": "The learner successfully retrieves the information with some effort, and receives feedback",
+      "C": "The learner copies answers while looking at the source material",
+      "D": "Retrieval is attempted only once and never repeated"
+    },
+    "answer": "B",
+    "concept": "retrieval_practice",
+    "chapter": 1,
+    "difficulty": "medium",
+    "explanation": "Effortful but successful retrieval produces the strongest learning benefits. When retrieval requires some struggle, it strengthens the memory trace more than easy recall. Feedback after retrieval attempts is important to correct errors and reinforce correct responses."
+  },
+  {
+    "id": 16,
+    "question": "A math student practices 20 addition problems, then 20 subtraction problems, then 20 multiplication problems. A classmate mixes all 60 problems randomly. Who will likely perform better on a mixed test a week later?",
+    "choices": {
+      "A": "The student who practiced in blocks, because focused practice builds stronger skills",
+      "B": "The student who mixed problems randomly, because interleaving improves discrimination and transfer",
+      "C": "Both will perform equally since total practice time is the same",
+      "D": "Neither approach works — only re-reading the textbook helps"
+    },
+    "answer": "B",
+    "concept": "interleaving",
+    "chapter": 2,
+    "difficulty": "medium",
+    "explanation": "Interleaved practice forces learners to identify which strategy applies to each problem, building discrimination skills. While blocked practice may feel more productive, interleaving leads to better performance on delayed and mixed tests because it mimics real-world conditions."
+  },
+  {
+    "id": 17,
+    "question": "Why does interleaving often FEEL less effective than blocked practice, even when it produces better long-term results?",
+    "choices": {
+      "A": "Because interleaving takes more total time",
+      "B": "Because mixing topics creates more errors during practice, leading students to misjudge their learning",
+      "C": "Because blocked practice is actually superior in every measurable way",
+      "D": "Because interleaving only works for language learning"
+    },
+    "answer": "B",
+    "concept": "interleaving",
+    "chapter": 2,
+    "difficulty": "medium",
+    "explanation": "Interleaving produces more errors and feels more confusing during practice, which makes students believe they are learning less. This is a metacognitive illusion — the struggle during interleaved practice is actually a desirable difficulty that strengthens long-term retention and transfer."
+  },
+  {
+    "id": 18,
+    "question": "A student studying biology interleaves chapters on the circulatory, respiratory, and digestive systems. What additional benefit does this provide beyond retention?",
+    "choices": {
+      "A": "It reduces total study time needed",
+      "B": "It eliminates the need for retrieval practice",
+      "C": "It helps the student compare and contrast the systems, building deeper conceptual understanding",
+      "D": "It guarantees a perfect score on the exam"
+    },
+    "answer": "C",
+    "concept": "interleaving",
+    "chapter": 2,
+    "difficulty": "hard",
+    "explanation": "Interleaving related topics forces the brain to notice similarities, differences, and relationships between concepts. This comparison process builds richer, more flexible knowledge structures that support transfer to new situations and deeper understanding."
+  },
+  {
+    "id": 19,
+    "question": "Self-explanation — pausing while reading to explain the material to yourself in your own words — is a form of:",
+    "choices": {
+      "A": "Procrastination",
+      "B": "Elaboration",
+      "C": "Cramming",
+      "D": "Blocked practice"
+    },
+    "answer": "B",
+    "concept": "elaboration",
+    "chapter": 2,
+    "difficulty": "easy",
+    "explanation": "Self-explanation is a core elaboration strategy. By pausing to put ideas into your own words, you force yourself to process the material deeply, connect it to what you already know, and identify gaps in understanding. It is one of the most effective study techniques identified by research."
+  },
+  {
+    "id": 20,
+    "question": "A student learning about classical conditioning creates an analogy: 'Pavlov's bell is like my phone notification — both trigger an automatic response after repeated pairing.' This is an example of:",
+    "choices": {
+      "A": "Rote memorization",
+      "B": "Passive review",
+      "C": "Elaborative encoding through analogy",
+      "D": "Interleaving"
+    },
+    "answer": "C",
+    "concept": "elaboration",
+    "chapter": 2,
+    "difficulty": "medium",
+    "explanation": "Creating analogies is a powerful elaboration strategy. By mapping a new concept (classical conditioning) onto something familiar (phone notifications), the student creates multiple retrieval pathways and deeper understanding. Analogies make abstract ideas concrete and memorable."
+  },
+  {
+    "id": 21,
+    "question": "Which elaboration strategy is MOST effective for learning a complex process with multiple steps?",
+    "choices": {
+      "A": "Memorize each step in isolation without connecting them",
+      "B": "Ask yourself 'why does this step come before the next one?' and explain the causal chain",
+      "C": "Highlight each step in a different color",
+      "D": "Read the process description once and move on"
+    },
+    "answer": "B",
+    "concept": "elaboration",
+    "chapter": 4,
+    "difficulty": "medium",
+    "explanation": "Elaborative interrogation — asking 'why' and 'how' questions about material — forces you to generate explanations that link steps causally. Understanding why each step follows the previous one creates a coherent mental model rather than a fragmented list of facts."
+  },
+  {
+    "id": 22,
+    "question": "Teaching material to someone else (or to an imaginary audience) enhances learning primarily because it combines:",
+    "choices": {
+      "A": "Highlighting and re-reading",
+      "B": "Retrieval practice and elaboration — you must recall the material and organize it into a coherent explanation",
+      "C": "Cramming and blocked practice",
+      "D": "Speed reading and note-taking"
+    },
+    "answer": "B",
+    "concept": "elaboration",
+    "chapter": 4,
+    "difficulty": "hard",
+    "explanation": "Teaching forces you to retrieve information from memory (retrieval practice) and reorganize it into a clear, connected explanation (elaboration). You must also identify and fill gaps in your understanding. This dual benefit makes teaching one of the most powerful learning strategies available."
+  },
+  {
+    "id": 23,
+    "question": "Which scenario BEST illustrates a desirable difficulty?",
+    "choices": {
+      "A": "A student studies in a noisy, distracting environment and cannot concentrate",
+      "B": "A student takes a practice quiz before studying the material, getting many answers wrong but priming their brain to notice key information",
+      "C": "A student re-reads notes in a quiet library and feels confident",
+      "D": "A student gives up because the material is too frustrating"
+    },
+    "answer": "B",
+    "concept": "desirable_difficulties",
+    "chapter": 3,
+    "difficulty": "medium",
+    "explanation": "Pre-testing — quizzing yourself before studying — is a desirable difficulty. Even though you get most answers wrong, the attempt to retrieve primes your brain to pay attention to the relevant information when you encounter it. Noise and frustration are undesirable difficulties that impair learning."
+  },
+  {
+    "id": 24,
+    "question": "A difficulty is 'desirable' when it:",
+    "choices": {
+      "A": "Makes the student feel stressed and anxious",
+      "B": "Triggers deeper cognitive processing that strengthens encoding and retrieval, even though it slows initial performance",
+      "C": "Is impossible to overcome without outside help",
+      "D": "Makes the material easier to process in the moment"
+    },
+    "answer": "B",
+    "concept": "desirable_difficulties",
+    "chapter": 3,
+    "difficulty": "easy",
+    "explanation": "A desirable difficulty must be achievable by the learner and must engage beneficial cognitive processes — like effortful retrieval, discrimination, or elaboration. If the difficulty simply overwhelms the learner or creates anxiety without productive processing, it becomes undesirable."
+  },
+  {
+    "id": 25,
+    "question": "Changing the study environment between sessions (e.g., studying in the library one day and a cafe the next) can enhance learning. This is an example of:",
+    "choices": {
+      "A": "A desirable difficulty — context variation prevents over-reliance on environmental cues and creates more flexible memory traces",
+      "B": "An undesirable difficulty — you should always study in the same place",
+      "C": "Interleaving — because you are mixing locations",
+      "D": "A waste of time that has no effect on learning"
+    },
+    "answer": "A",
+    "concept": "desirable_difficulties",
+    "chapter": 3,
+    "difficulty": "medium",
+    "explanation": "Varying the study context is a desirable difficulty. When you always study in the same place, your memory becomes tied to those environmental cues. Varying contexts forces more flexible encoding, making it easier to recall information in novel settings like an exam room."
+  },
+  {
+    "id": 26,
+    "question": "Why is generating your own answer before looking at the solution — even if your answer is wrong — beneficial for learning?",
+    "choices": {
+      "A": "Wrong answers are always learned and recalled on exams",
+      "B": "The generation attempt activates related knowledge and creates a 'search' in memory that makes the correct answer more memorable when revealed",
+      "C": "It saves time compared to reading the solution",
+      "D": "It only works for multiple-choice questions"
+    },
+    "answer": "B",
+    "concept": "desirable_difficulties",
+    "chapter": 5,
+    "difficulty": "hard",
+    "explanation": "The generation effect shows that attempting to produce an answer — even incorrectly — activates relevant knowledge networks and creates a memory 'slot' that the correct answer fills more effectively. This effortful generation is a desirable difficulty that enhances subsequent learning from feedback."
+  },
+  {
+    "id": 27,
+    "question": "A student finishes a study session and rates their confidence in each topic on a scale of 1-5. They plan to spend more time on low-confidence topics tomorrow. This demonstrates:",
+    "choices": {
+      "A": "Procrastination",
+      "B": "Metacognitive monitoring and regulation — judging their own knowledge and adjusting study plans accordingly",
+      "C": "Cramming",
+      "D": "The testing effect"
+    },
+    "answer": "B",
+    "concept": "metacognition",
+    "chapter": 3,
+    "difficulty": "easy",
+    "explanation": "This student is using two key metacognitive skills: monitoring (assessing their confidence level for each topic) and regulation (using that assessment to allocate future study time). This self-directed approach leads to more efficient studying than blindly reviewing everything equally."
+  },
+  {
+    "id": 28,
+    "question": "The Dunning-Kruger effect, as it relates to studying, suggests that:",
+    "choices": {
+      "A": "The most knowledgeable students are also the most confident",
+      "B": "Students with the least understanding of a topic tend to overestimate their knowledge the most",
+      "C": "Confidence and knowledge are always perfectly correlated",
+      "D": "Expert learners never make mistakes"
+    },
+    "answer": "B",
+    "concept": "metacognition",
+    "chapter": 5,
+    "difficulty": "medium",
+    "explanation": "The Dunning-Kruger effect shows that people with limited knowledge in an area often lack the metacognitive skills to recognize their own deficiencies. In studying, this means the students who most need to change their strategies are often the least aware that their strategies are ineffective."
+  },
+  {
+    "id": 29,
+    "question": "Which practice BEST helps students calibrate their metacognitive judgments?",
+    "choices": {
+      "A": "Asking friends how confident they feel",
+      "B": "Making predictions about test performance, then comparing predictions to actual results to identify patterns of overconfidence or underconfidence",
+      "C": "Avoiding all self-assessment to reduce anxiety",
+      "D": "Always assuming they know less than they do"
+    },
+    "answer": "B",
+    "concept": "metacognition",
+    "chapter": 5,
+    "difficulty": "hard",
+    "explanation": "Metacognitive calibration improves when students make explicit predictions and then check them against reality. Over time, this feedback loop helps students develop more accurate self-assessment, reducing both overconfidence (thinking you know more than you do) and underconfidence."
+  },
+  {
+    "id": 30,
+    "question": "When you are studying and suddenly realize 'I don't actually understand this — I just recognize the words,' you are experiencing:",
+    "choices": {
+      "A": "A retrieval failure",
+      "B": "A metacognitive insight — recognizing the difference between familiarity and genuine understanding",
+      "C": "The spacing effect",
+      "D": "Interleaving"
+    },
+    "answer": "B",
+    "concept": "metacognition",
+    "chapter": 3,
+    "difficulty": "easy",
+    "explanation": "This moment of realization is a metacognitive breakthrough. Distinguishing between mere recognition (familiarity) and true understanding (the ability to explain, apply, and transfer knowledge) is a critical metacognitive skill that separates effective from ineffective learners."
+  },
+  {
+    "id": 31,
+    "question": "A student uses the Leitner system with physical flashcards sorted into boxes. Cards answered correctly move to a box reviewed less frequently; cards answered incorrectly return to the daily box. This system applies:",
+    "choices": {
+      "A": "Elaboration only",
+      "B": "Both spaced repetition and retrieval practice — reviews are spaced based on performance, and each review requires active recall",
+      "C": "Only interleaving",
+      "D": "Passive re-reading with a filing system"
+    },
+    "answer": "B",
+    "concept": "spaced_repetition",
+    "chapter": 4,
+    "difficulty": "medium",
+    "explanation": "The Leitner system is a manual spaced-repetition algorithm. It combines retrieval practice (you must recall the answer before flipping the card) with adaptive spacing (well-known cards are reviewed less often, difficult cards more often). It is simple but effective for long-term retention."
+  },
+  {
+    "id": 32,
+    "question": "What is the primary reason that cramming (massed practice) feels effective even though it produces poor long-term retention?",
+    "choices": {
+      "A": "Because cramming activates deep processing",
+      "B": "Because the information is held in short-term/working memory during and immediately after the session, creating a temporary feeling of mastery",
+      "C": "Because massed practice is actually the best strategy for all situations",
+      "D": "Because spaced repetition has been debunked by recent research"
+    },
+    "answer": "B",
+    "concept": "spaced_repetition",
+    "chapter": 4,
+    "difficulty": "hard",
+    "explanation": "Cramming loads information into working memory, producing strong short-term recall that feels like real learning. But without spaced review, these memories are not consolidated into long-term storage. Students mistake short-term fluency for durable learning — a common metacognitive error."
+  },
+  {
+    "id": 33,
+    "question": "After finishing a study session, a student writes a brief summary of what they learned and what still confuses them. This practice of 'study journaling' primarily supports:",
+    "choices": {
+      "A": "Interleaving",
+      "B": "Metacognition — it forces reflection on what was learned and what needs more work",
+      "C": "The spacing effect",
+      "D": "Blocked practice"
+    },
+    "answer": "B",
+    "concept": "metacognition",
+    "chapter": 6,
+    "difficulty": "medium",
+    "explanation": "Reflective journaling after study sessions is a metacognitive strategy. By articulating what you learned and identifying confusion points, you practice monitoring your comprehension and can plan targeted follow-up study. It transforms study from an autopilot activity into a self-regulated process."
+  },
+  {
+    "id": 34,
+    "question": "Which of the following strategies would BEST combine retrieval practice with elaboration?",
+    "choices": {
+      "A": "Re-reading notes and highlighting key terms",
+      "B": "Closing your notes, writing everything you recall from memory, and then explaining in your own words WHY each concept matters",
+      "C": "Listening to a lecture recording at 2x speed",
+      "D": "Copying definitions from the textbook into a notebook"
+    },
+    "answer": "B",
+    "concept": "retrieval_practice",
+    "chapter": 4,
+    "difficulty": "medium",
+    "explanation": "This approach combines retrieval practice (recalling information from memory without looking at notes) with elaboration (explaining concepts in your own words and connecting them to meaning). Combining multiple evidence-based strategies amplifies their individual benefits."
+  },
+  {
+    "id": 35,
+    "question": "Research by Roediger and Karpicke (2006) found that students who studied a passage once and then took three practice tests remembered MORE after one week than students who studied the passage four times. This finding MOST directly supports:",
+    "choices": {
+      "A": "The superiority of re-reading over testing",
+      "B": "The testing effect — repeated retrieval practice produces better long-term retention than repeated study, even with less total exposure",
+      "C": "The idea that total study time is the only factor that matters",
+      "D": "The conclusion that practice tests cause anxiety that helps memory"
+    },
+    "answer": "B",
+    "concept": "retrieval_practice",
+    "chapter": 6,
+    "difficulty": "hard",
+    "explanation": "This landmark study demonstrated that retrieval practice (testing) is a more powerful learning event than additional study exposures. After one week, the testing group retained about 50% more material than the re-reading group. The effect is robust across ages, materials, and test formats."
   }
 ]

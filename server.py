@@ -37,6 +37,7 @@ DATA_DIR.mkdir(parents=True, exist_ok=True)
 
 DB_PATH = DATA_DIR / "learner.db"
 CHROMA_DIR = DATA_DIR / "chroma_db"
+SCOPE_PATH = DATA_DIR / "scope.json"
 PROFILES_DIR = DATA_DIR / "profiles"
 PROFILES_DIR.mkdir(parents=True, exist_ok=True)
 FEEDBACK_LOG = DATA_DIR / "feedback_log.jsonl"
@@ -350,12 +351,9 @@ def index():
 
 @app.route("/battle")
 def battle_redirect():
-    from flask import redirect, request as req
-    # If accessed via tunnel, redirect to battle tunnel; else localhost
-    host = req.host or ""
-    if "trycloudflare" in host or "view-ai" in host:
-        return redirect("https://battle.view-ai.com/")
-    return redirect("http://localhost:4000/")
+    from flask import redirect
+    battle_port = os.environ.get("BATTLE_PORT", "4000")
+    return redirect(f"http://localhost:{battle_port}/")
 
 @app.route("/podcast/<path:fn>")
 def serve_podcast(fn):
@@ -779,8 +777,11 @@ def agent_stream():
 
 # === VIDEO QUIZZES ===
 VIDEO_QUIZ_PATH = DATA_DIR / "video_quizzes.json"
-with open(VIDEO_QUIZ_PATH) as f:
-    VIDEO_QUIZZES = json.load(f)
+try:
+    with open(VIDEO_QUIZ_PATH) as f:
+        VIDEO_QUIZZES = json.load(f)
+except (FileNotFoundError, json.JSONDecodeError):
+    VIDEO_QUIZZES = {"quizzes": []}
 
 @app.route("/api/videos")
 def get_videos():
@@ -1786,6 +1787,22 @@ def health():
         "pack_name": PACK_CONFIG.get("name", ""),
         "concepts": len(CONCEPT_MAP),
     })
+
+# Initialize database on startup
+try:
+    from engine.db_init import init_database, load_questions_from_pack, generate_scope_from_pack
+    init_database(str(DB_PATH))
+    if ACTIVE_PACK:
+        pack_dir = str(PACKS_DIR / ACTIVE_PACK)
+        import sqlite3 as _sql
+        _db = _sql.connect(str(DB_PATH))
+        load_questions_from_pack(_db, pack_dir)
+        _db.close()
+        generate_scope_from_pack(pack_dir, str(DATA_DIR))
+except ImportError:
+    print("[Cram-It] Warning: engine.db_init not found, skipping database initialization")
+except Exception as e:
+    print(f"[Cram-It] Warning: database initialization failed: {e}")
 
 if __name__ == "__main__":
     port = int(os.environ.get("CRAM_IT_PORT", 3000))

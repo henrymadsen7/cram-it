@@ -45,8 +45,14 @@ def _get_chroma():
     if _chroma_client is None:
         ef = _get_embed_fn()
         _chroma_client = chromadb.PersistentClient(path=str(CHROMA_DIR))
-        _textbook_col = _chroma_client.get_collection("textbook", embedding_function=ef)
-        _exam_col = _chroma_client.get_collection("exam_questions", embedding_function=ef)
+        try:
+            _textbook_col = _chroma_client.get_collection("textbook", embedding_function=ef)
+        except Exception:
+            _textbook_col = None
+        try:
+            _exam_col = _chroma_client.get_collection("exam_questions", embedding_function=ef)
+        except Exception:
+            _exam_col = None
     return _textbook_col, _exam_col
 
 
@@ -169,8 +175,11 @@ def _get_profile(user_id):
 def _get_scope():
     global _scope
     if _scope is None:
-        with open(SCOPE_PATH) as f:
-            _scope = json.load(f)
+        if SCOPE_PATH.exists():
+            with open(SCOPE_PATH) as f:
+                _scope = json.load(f)
+        else:
+            _scope = {"topics": [], "calc_types": [], "tricky_patterns": []}
     return _scope
 
 
@@ -958,38 +967,38 @@ def quiz_explain(question_id):
     query_text = q["question_text"]
 
     # Query textbook for relevant chunks
-    tb_results = textbook_col.query(
-        query_texts=[query_text],
-        n_results=5
-    )
-
     textbook_context = []
     chunk_ids = []
-    if tb_results and tb_results["documents"]:
-        for doc, meta, cid in zip(tb_results["documents"][0], tb_results["metadatas"][0], tb_results["ids"][0]):
-            textbook_context.append({
-                "text": doc,
-                "chapter": meta.get("chapter", ""),
-                "section": meta.get("section", ""),
-                "chunk_id": cid,
-            })
-            chunk_ids.append(cid)
+    if textbook_col is not None:
+        tb_results = textbook_col.query(
+            query_texts=[query_text],
+            n_results=5
+        )
+        if tb_results and tb_results["documents"]:
+            for doc, meta, cid in zip(tb_results["documents"][0], tb_results["metadatas"][0], tb_results["ids"][0]):
+                textbook_context.append({
+                    "text": doc,
+                    "chapter": meta.get("chapter", ""),
+                    "section": meta.get("section", ""),
+                    "chunk_id": cid,
+                })
+                chunk_ids.append(cid)
 
     # Query exam_questions for similar questions from OTHER exams
-    eq_results = exam_col.query(
-        query_texts=[query_text],
-        n_results=5,
-        where={"source_exam": {"$ne": q.get("source_exam", "")}}
-    )
-
     similar_questions = []
-    if eq_results and eq_results["documents"]:
-        for doc, meta in zip(eq_results["documents"][0], eq_results["metadatas"][0]):
-            similar_questions.append({
-                "text": doc[:300],
-                "source": meta.get("source_exam", ""),
-                "correct_answer": meta.get("correct_answer", ""),
-            })
+    if exam_col is not None:
+        eq_results = exam_col.query(
+            query_texts=[query_text],
+            n_results=5,
+            where={"source_exam": {"$ne": q.get("source_exam", "")}}
+        )
+        if eq_results and eq_results["documents"]:
+            for doc, meta in zip(eq_results["documents"][0], eq_results["metadatas"][0]):
+                similar_questions.append({
+                    "text": doc[:300],
+                    "source": meta.get("source_exam", ""),
+                    "correct_answer": meta.get("correct_answer", ""),
+                })
 
     # Find relevant calc type formula
     calc_formula = None
@@ -1250,21 +1259,22 @@ def quiz_similar(question_id):
 
     _, exam_col = _get_chroma()
 
-    results = exam_col.query(
-        query_texts=[q["question_text"]],
-        n_results=5,
-        where={"source_exam": {"$ne": q.get("source_exam", "")}}
-    )
-
     similar = []
-    if results and results["documents"]:
-        for doc, meta, dist in zip(results["documents"][0], results["metadatas"][0], results["distances"][0]):
-            similar.append({
-                "text": doc[:400],
-                "source_exam": meta.get("source_exam", ""),
-                "correct_answer": meta.get("correct_answer", ""),
-                "similarity": round(1 - dist, 3) if dist else 0,
-            })
+    if exam_col is not None:
+        results = exam_col.query(
+            query_texts=[q["question_text"]],
+            n_results=5,
+            where={"source_exam": {"$ne": q.get("source_exam", "")}}
+        )
+
+        if results and results["documents"]:
+            for doc, meta, dist in zip(results["documents"][0], results["metadatas"][0], results["distances"][0]):
+                similar.append({
+                    "text": doc[:400],
+                    "source_exam": meta.get("source_exam", ""),
+                    "correct_answer": meta.get("correct_answer", ""),
+                    "similarity": round(1 - dist, 3) if dist else 0,
+                })
 
     return json.dumps({
         "original": q["question_text"][:200],
