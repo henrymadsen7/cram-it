@@ -36,6 +36,14 @@ import argparse
 from pathlib import Path
 
 
+# Import the shared validation from the script generator
+sys.path.insert(0, os.path.dirname(__file__))
+try:
+    from generate_podcast_script import validate_pack_readiness
+except ImportError:
+    validate_pack_readiness = None
+
+
 # Default voices (Microsoft Edge TTS - free, no API key)
 DEFAULT_VOICE1 = "en-US-AndrewMultilingualNeural"   # Host
 DEFAULT_VOICE2 = "en-US-EmmaMultilingualNeural"      # Expert
@@ -231,6 +239,8 @@ def main():
                         help="Speech rate adjustment (default: +12%%)")
     parser.add_argument("--topic", type=str, default=None,
                         help="Focus topic (passed to script generator if auto-generating)")
+    parser.add_argument("--force", action="store_true",
+                        help="Override minimum content requirements check (when using --pack-dir)")
 
     args = parser.parse_args()
 
@@ -241,6 +251,12 @@ def main():
 
     # Auto-generate script from pack if no script provided
     if not script_path:
+        # Validate pack has enough content before generating
+        if validate_pack_readiness:
+            ok, issues = validate_pack_readiness(args.pack_dir, force=args.force)
+            if not ok:
+                sys.exit(1)
+
         print("No script provided, auto-generating from pack content...")
         from generate_podcast_script import generate_script
         script_path = os.path.join(args.pack_dir, "podcast_script.txt")

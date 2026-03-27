@@ -36,6 +36,85 @@ load_dotenv(Path(__file__).parent.parent / ".env")
 load_dotenv(Path.home() / ".hermes/.env")
 
 
+# ─────────────────────────────────────────────
+# Minimum Content Requirements
+# ─────────────────────────────────────────────
+MIN_QUESTIONS = 10
+MIN_CONCEPTS = 3
+
+
+def validate_pack_readiness(pack_dir, force=False):
+    """
+    Check that a pack has enough content to produce a useful podcast.
+
+    Requirements:
+      - pack.yaml must exist (enforced elsewhere)
+      - At least MIN_QUESTIONS questions in questions.json
+      - At least MIN_CONCEPTS concepts in concept_map.json
+
+    Returns (ok: bool, issues: list[str]).
+    If force=True, prints warnings but doesn't block.
+    """
+    pack_path = Path(pack_dir)
+    issues = []
+
+    # Check questions
+    q_path = pack_path / "questions.json"
+    q_count = 0
+    if q_path.exists():
+        try:
+            import json as _json
+            with open(q_path) as f:
+                data = _json.load(f)
+            q_count = len(data) if isinstance(data, list) else len(data.values()) if isinstance(data, dict) else 0
+        except Exception:
+            q_count = 0
+    if q_count < MIN_QUESTIONS:
+        issues.append(
+            f"questions.json has {q_count} questions (minimum: {MIN_QUESTIONS}). "
+            f"Add {MIN_QUESTIONS - q_count} more questions before generating a podcast."
+        )
+
+    # Check concepts
+    cm_path = pack_path / "concept_map.json"
+    cm_count = 0
+    if cm_path.exists():
+        try:
+            import json as _json
+            with open(cm_path) as f:
+                data = _json.load(f)
+            cm_count = len(data) if isinstance(data, dict) else 0
+        except Exception:
+            cm_count = 0
+    if cm_count < MIN_CONCEPTS:
+        issues.append(
+            f"concept_map.json has {cm_count} concepts (minimum: {MIN_CONCEPTS}). "
+            f"Add {MIN_CONCEPTS - cm_count} more concepts before generating a podcast."
+        )
+
+    if issues:
+        print("\n⚠️  PACK CONTENT CHECK FAILED")
+        print("=" * 50)
+        for issue in issues:
+            print(f"  ✗ {issue}")
+        print("=" * 50)
+        if force:
+            print("  --force flag set, proceeding anyway...\n")
+            return True, issues
+        else:
+            print(
+                "\nPodcast generation requires a minimum amount of coursework.\n"
+                "This ensures the AI has enough material to produce a useful review.\n"
+                "\nOptions:\n"
+                "  1. Add more content to your pack (questions, concepts)\n"
+                "  2. Use --force to override this check\n"
+            )
+            return False, issues
+
+    print(f"✓ Pack content check passed ({q_count} questions, {cm_count} concepts)")
+    return True, []
+
+
 def load_pack_content(pack_dir):
     """
     Load all available content from a course pack directory.
@@ -266,11 +345,18 @@ def main():
                         help="Target podcast duration in minutes (default: 10)")
     parser.add_argument("--model", type=str, default="claude-sonnet-4-20250514",
                         help="Claude model to use (default: claude-sonnet-4-20250514)")
+    parser.add_argument("--force", action="store_true",
+                        help="Override minimum content requirements check")
 
     args = parser.parse_args()
 
     if not os.path.exists(os.path.join(args.pack_dir, "pack.yaml")):
         print(f"ERROR: pack.yaml not found in {args.pack_dir}")
+        sys.exit(1)
+
+    # Validate pack has enough content
+    ok, issues = validate_pack_readiness(args.pack_dir, force=args.force)
+    if not ok:
         sys.exit(1)
 
     result = generate_script(

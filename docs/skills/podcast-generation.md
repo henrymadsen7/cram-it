@@ -31,6 +31,14 @@ python tools/generate_podcast_video.py --script podcast/script.txt --output podc
 
 See [PODCAST_GUIDE.md](../PODCAST_GUIDE.md) for full documentation including voice selection, custom scripts, troubleshooting, and a complete walkthrough.
 
+### Minimum Content Gate
+
+All three tools enforce a minimum content threshold before running:
+- **10+ questions** in `questions.json`
+- **3+ concepts** in `concept_map.json`
+
+This prevents generating shallow, useless podcasts from nearly-empty packs. Override with `--force` if needed.
+
 ---
 
 ## Architecture

@@ -114,6 +114,40 @@ export ANTHROPIC_API_KEY="sk-ant-..."
 
 This is only needed for `generate_podcast_script.py`. If you write scripts manually, no API key is required.
 
+### Minimum Pack Content
+
+Podcast and video generation require a **minimum amount of coursework** in your pack before they'll run. This ensures the AI has enough material to produce a genuinely useful review — not a shallow summary of 3 flashcards.
+
+| Requirement | Minimum | Why |
+|-------------|---------|-----|
+| Questions in `questions.json` | **10** | The podcast script draws from real exam-style questions to build the review dialogue |
+| Concepts in `concept_map.json` | **3** | Concept cards and topic transitions need enough topics to structure the episode |
+
+If your pack doesn't meet these minimums, the tools will print a clear error showing what's missing:
+
+```
+⚠️  PACK CONTENT CHECK FAILED
+==================================================
+  ✗ questions.json has 4 questions (minimum: 10). Add 6 more questions before generating a podcast.
+  ✗ concept_map.json has 1 concepts (minimum: 3). Add 2 more concepts before generating a podcast.
+==================================================
+
+Podcast generation requires a minimum amount of coursework.
+This ensures the AI has enough material to produce a useful review.
+
+Options:
+  1. Add more content to your pack (questions, concepts)
+  2. Use --force to override this check
+```
+
+To bypass the check (e.g., for testing), pass `--force`:
+
+```bash
+python tools/generate_podcast_script.py --pack-dir packs/my-course --force
+```
+
+> **Tip:** Use the LMS ingest tools (`ingest_canvas.py`, `ingest_learning_suite.py`) or `ingest_pdf.py` to quickly populate your pack with real course content before generating podcasts.
+
 ---
 
 ## Quick Start

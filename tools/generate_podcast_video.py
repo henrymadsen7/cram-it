@@ -46,6 +46,14 @@ import matplotlib.patches as patches
 import numpy as np
 
 
+# Import the shared validation from the script generator
+sys.path.insert(0, os.path.dirname(__file__))
+try:
+    from generate_podcast_script import validate_pack_readiness
+except ImportError:
+    validate_pack_readiness = None
+
+
 # ─────────────────────────────────────────────
 # Visual theme (dark mode, good for video)
 # ─────────────────────────────────────────────
@@ -608,6 +616,8 @@ def main():
                         help="Output video file path (default: podcast_video.mp4)")
     parser.add_argument("--script", type=str, default=None,
                         help="Path to the podcast script (for better segment-to-visual mapping)")
+    parser.add_argument("--force", action="store_true",
+                        help="Override minimum content requirements check")
 
     args = parser.parse_args()
 
@@ -618,6 +628,12 @@ def main():
     if not os.path.exists(os.path.join(args.pack_dir, "pack.yaml")):
         print(f"ERROR: pack.yaml not found in {args.pack_dir}")
         sys.exit(1)
+
+    # Validate pack has enough content
+    if validate_pack_readiness:
+        ok, issues = validate_pack_readiness(args.pack_dir, force=args.force)
+        if not ok:
+            sys.exit(1)
 
     result = generate_podcast_video(
         audio_path=args.audio,
