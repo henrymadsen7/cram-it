@@ -1,8 +1,35 @@
 # Skill: Podcast Generation
 
+> **User-facing guide:** For a comprehensive how-to guide with quick start, voice selection, examples, and troubleshooting, see **[PODCAST_GUIDE.md](../PODCAST_GUIDE.md)**.
+
 ## Overview
 
 Cram-It can generate audio and video review podcasts using Edge-TTS for voice synthesis and matplotlib + ffmpeg for video rendering. The output is a two-voice dialogue format — like a study session between a tutor and a student.
+
+## CLI Tools
+
+Three command-line tools implement the full pipeline:
+
+| Tool | Purpose |
+|------|---------|
+| `tools/generate_podcast_script.py` | AI script generation from pack content (requires Anthropic API key) |
+| `tools/generate_podcast.py` | Converts a `[VOICE1]`/`[VOICE2]` script into an MP3 audio podcast via Edge-TTS |
+| `tools/generate_podcast_video.py` | Converts a script into an MP4 video podcast with matplotlib-rendered frames + Edge-TTS audio |
+
+### Quick Start
+
+```bash
+# 1. Generate script from course pack
+python tools/generate_podcast_script.py --pack packs/demo-study-skills --output podcast/script.txt
+
+# 2. Generate audio podcast
+python tools/generate_podcast.py --script podcast/script.txt --output podcast/review.mp3
+
+# 3. (Optional) Generate video podcast
+python tools/generate_podcast_video.py --script podcast/script.txt --output podcast/review_video.mp4
+```
+
+See [PODCAST_GUIDE.md](../PODCAST_GUIDE.md) for full documentation including voice selection, custom scripts, troubleshooting, and a complete walkthrough.
 
 ---
 

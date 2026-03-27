@@ -359,8 +359,23 @@ def battle_redirect():
 
 @app.route("/podcast/<path:fn>")
 def serve_podcast(fn):
+    """Serve podcast files from the active pack's podcast/ directory."""
     from flask import send_from_directory
+    if ACTIVE_PACK:
+        pack_podcast_dir = PACKS_DIR / ACTIVE_PACK / "podcast"
+        if pack_podcast_dir.exists():
+            return send_from_directory(str(pack_podcast_dir), fn)
+    # Fallback to legacy top-level podcast/ directory
     return send_from_directory("podcast", fn)
+
+@app.route("/podcast/<pack_name>/<path:fn>")
+def serve_pack_podcast(pack_name, fn):
+    """Serve podcast files from a specific pack's podcast/ directory."""
+    from flask import send_from_directory, abort
+    pack_podcast_dir = PACKS_DIR / pack_name / "podcast"
+    if not pack_podcast_dir.exists():
+        abort(404)
+    return send_from_directory(str(pack_podcast_dir), fn)
 
 @app.route("/static/figures/<path:fn>")
 def fig(fn):
