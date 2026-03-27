@@ -66,26 +66,28 @@ CREATE TABLE IF NOT EXISTS users (
     created_at    DATETIME DEFAULT CURRENT_TIMESTAMP
 );
 
--- User preferences (tutor style, pace, etc.)
+-- User preferences (tutor style, session tracking, etc.)
 CREATE TABLE IF NOT EXISTS user_preferences (
-    user_id            TEXT PRIMARY KEY,
-    display_name       TEXT DEFAULT '',
-    pace               TEXT DEFAULT 'normal',
-    explanation_style  TEXT DEFAULT 'balanced',
-    focus_areas        TEXT DEFAULT '[]'
+    user_id                TEXT PRIMARY KEY,
+    display_name           TEXT DEFAULT '',
+    tutor_persona          TEXT DEFAULT 'Tutor',
+    explanation_style      TEXT DEFAULT 'step-by-step',
+    weak_calc_types        TEXT DEFAULT '[]',
+    preferred_graph_detail TEXT DEFAULT 'annotated',
+    session_count          INTEGER DEFAULT 0
 );
 
 -- Review log (every answer attempt)
 CREATE TABLE IF NOT EXISTS reviews (
-    id                 INTEGER PRIMARY KEY AUTOINCREMENT,
-    user_id            TEXT,
-    question_id        TEXT,
-    correct            INTEGER,
-    user_answer        TEXT,
-    timestamp          DATETIME DEFAULT CURRENT_TIMESTAMP,
-    seconds_spent      REAL DEFAULT 0,
-    explanation_chunks TEXT,
-    session_id         TEXT
+    id                   INTEGER PRIMARY KEY AUTOINCREMENT,
+    user_id              TEXT,
+    question_id          TEXT,
+    correct              INTEGER,
+    user_answer          TEXT,
+    timestamp            DATETIME DEFAULT CURRENT_TIMESTAMP,
+    time_spent_seconds   REAL DEFAULT 0,
+    explanation_chunks   TEXT,
+    session_id           TEXT
 );
 
 -- Aggregate topic-level mastery
@@ -136,10 +138,11 @@ CREATE TABLE IF NOT EXISTS sessions (
 
 -- Intake / diagnostic responses
 CREATE TABLE IF NOT EXISTS intake_responses (
-    user_id    TEXT,
-    question_id TEXT,
-    answer     TEXT,
-    timestamp  DATETIME DEFAULT CURRENT_TIMESTAMP
+    user_id       TEXT,
+    question_text TEXT,
+    response_text TEXT,
+    assessment    TEXT,
+    timestamp     DATETIME DEFAULT CURRENT_TIMESTAMP
 );
 
 -- Mock-exam scoring history

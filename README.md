@@ -2,12 +2,16 @@
 
 **AI-Powered Exam Prep Platform**
 
-<!-- Badges -->
-<!-- ![Build](https://img.shields.io/github/actions/workflow/status/babyLegionite/cram-it/ci.yml) -->
-<!-- ![License](https://img.shields.io/github/license/babyLegionite/cram-it) -->
-<!-- ![Python](https://img.shields.io/badge/python-3.10+-blue) -->
+![Build](https://img.shields.io/github/actions/workflow/status/babyLegionite/cram-it/ci.yml)
+![License](https://img.shields.io/github/license/babyLegionite/cram-it)
+![Python](https://img.shields.io/badge/python-3.11+-blue)
 
 Cram-It is a self-hosted, multi-course study engine that combines FSRS spaced repetition, AI tutoring via Claude, real-time multiplayer battle mode, and LMS integrations into a single installable PWA.
+
+<p align="center">
+  <img src="docs/screenshots/01-login.png" width="280" alt="Login Screen">&nbsp;&nbsp;&nbsp;
+  <img src="docs/screenshots/03-tutor.png" width="280" alt="AI Tutor Chat">
+</p>
 
 ---
 
