@@ -54,7 +54,7 @@ The core quiz engine, separate from Flask:
 
 AI question generation pipeline:
 
-1. `get_butler_context()` — Get same-concept questions as examples
+1. `get_similar_context()` — Get same-concept questions as examples
 2. `search_web_questions()` — DuckDuckGo search for existing questions
 3. `generate_similar_questions()` — Claude generates new questions
 4. `validate_question()` — Second Claude pass to verify answer

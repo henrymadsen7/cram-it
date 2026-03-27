@@ -125,7 +125,7 @@ A "pack" is a self-contained course module. Each pack lives in `packs/<pack-name
 name: "Introduction to Microeconomics"
 short_name: "Econ 101"
 description: "Microeconomics exam prep covering chapters 14-29"
-textbook: "Principles of Economics, Mankiw"
+textbook: "Your Textbook Title"
 professor: "Dr. Smith"
 exam_format:
   questions: 40

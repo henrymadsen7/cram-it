@@ -24,7 +24,7 @@ claude = anthropic.Anthropic()
 # STEP 1: Gather context for a concept
 # ============================================================
 
-def get_butler_context(question_id, concept_tags):
+def get_similar_context(question_id, concept_tags):
     """Get all same-concept questions from the bank as few-shot examples."""
     db = sqlite3.connect(str(DB_PATH))
     db.row_factory = sqlite3.Row
@@ -60,7 +60,7 @@ def search_web_questions(concept_name, question_text_snippet):
     concept_clean = concept_name.replace("_", " ")
     queries = [
         f"economics {concept_clean} multiple choice quiz answers",
-        f"mankiw economics {concept_clean} practice questions",
+        f"{concept_clean} practice exam questions",
     ]
     
     for query in queries:
@@ -89,12 +89,12 @@ def search_web_questions(concept_name, question_text_snippet):
 # STEP 3: AI Generation (the main engine)
 # ============================================================
 
-def generate_similar_questions(original_q, user_answer, butler_examples, concept_tags, count=3):
+def generate_similar_questions(original_q, user_answer, similar_examples, concept_tags, count=3):
     """Generate 2-3 similar questions using Claude, matching the exam's style."""
     
     # Build the exam examples string
     examples_str = ""
-    for i, ex in enumerate(butler_examples[:5]):
+    for i, ex in enumerate(similar_examples[:5]):
         choices = json.loads(ex.get("answer_choices", "{}")) if ex.get("answer_choices") else {}
         choices_str = "\n".join([f"  {k.upper()}) {v}" for k, v in choices.items()])
         examples_str += f"""
@@ -132,7 +132,7 @@ Correct Answer: {original_q['correct_answer']}
 Student Picked: {user_answer}
 Concepts: {concept_str}
 
-HERE IS HOW BUTLER TESTS THIS CONCEPT (real exam questions):
+HERE ARE SIMILAR EXAM QUESTIONS FOR THIS CONCEPT (real exam questions):
 {examples_str}
 
 GENERATE {count} NEW QUESTIONS that:
@@ -277,14 +277,14 @@ def generate_for_missed_question(question_id, user_answer, user_id, count=3):
         concept_tags = ["general"]
     
     # Step 1: Gather context
-    _, butler_examples = get_butler_context(question_id, concept_tags)
+    _, similar_examples = get_similar_context(question_id, concept_tags)
     
     # Step 2: Search web (non-blocking attempt)
     web_results = search_web_questions(concept_tags[0], original["question_text"][:80])
     
     # Step 3: Generate questions via AI
     generated = generate_similar_questions(
-        original, user_answer, butler_examples, concept_tags, count=count
+        original, user_answer, similar_examples, concept_tags, count=count
     )
     
     # Step 4: Validate each question

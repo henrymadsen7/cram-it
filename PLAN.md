@@ -13,7 +13,7 @@ Cram-It becomes a self-hosted, AI-powered exam prep platform that any student ca
 
 ## 2. Current State (What Exists)
 
-### Codebase: `~/Desktop/econ/tutor-app/`
+### Codebase: `~/Desktop/cram-it/`
 - **server.py** (1647 lines) — Flask backend, AI tutor, drill engine, exam mode
 - **templates/index.html** (1892 lines) — Full PWA SPA (Tutor/Drill/Bank/Stats/Exam/Pod/Cards tabs)
 - **kahoot/game.py** (1364 lines) — Battle Mode (Kahoot-style multiplayer)
@@ -22,20 +22,20 @@ Cram-It becomes a self-hosted, AI-powered exam prep platform that any student ca
 - **podcast/** and **podcast2/** — Generated review podcasts (audio + video)
 
 ### External Dependencies:
-- **tutor_plugin.py** at `~/.hermes/plugins/tutor/` — FSRS + mastery + drill logic (THE CORE ENGINE)
-- **learner.db** at `~/.hermes/plugins/tutor/` — SQLite user data
-- **chroma_db/** at `~/.hermes/plugins/tutor/` — ChromaDB slide/textbook embeddings
-- **knowledge_graph.json**, **concept_map.json**, **video_quizzes.json** — same dir
+- **tutor_plugin.py** at `engine/` — FSRS + mastery + drill logic (THE CORE ENGINE)
+- **learner.db** at `data/` — SQLite user data
+- **chroma_db/** at `data/` — ChromaDB slide/textbook embeddings
+- **knowledge_graph.json**, **concept_map.json**, **video_quizzes.json** — in pack data
 
 ### Skills (Albert's Hermes instance):
-- `economics/butler-tutor` — Architecture doc for the tutor
+- `economics/tutor-architecture` — Architecture doc for the tutor
 - `economics/econ-graphs` — SVG graph rendering
 - `economics/video-podcast` — Podcast generation pipeline
 - `economics/voice-tutor` — Real-time voice tutoring (Pipecat)
 - `grade-portal` — Canvas + Learning Suite grade scraping
 - `grade-portal/canvas-quiz-automation` — Canvas quiz automation via CDP
 
-### MSB 430 Data: `~/Desktop/msb430/data/`
+### Example Scraped Data: `data/scraped/`
 - `all_questions.json` (250 scraped Canvas quiz questions)
 - `raw_quiz_texts.json` (raw Canvas HTML)
 
@@ -114,7 +114,7 @@ cram-it/
 │   ├── DEPLOYMENT.md             # Cloudflare tunnel + self-hosting
 │   ├── HERMES_INTEGRATION.md     # How Cram-It works with Hermes/OpenClaw
 │   └── skills/                   # Hermes skill files for AI-assisted development
-│       ├── butler-tutor.md       # Tutor architecture skill (generalized)
+│       ├── tutor-architecture.md  # Tutor architecture skill (generalized)
 │       ├── econ-graphs.md        # Graph rendering skill
 │       ├── video-podcast.md      # Podcast generation skill
 │       ├── voice-tutor.md        # Voice tutor skill
@@ -159,8 +159,8 @@ cram-it/
 ### Phase 2: Strip Personal Data
 
 - [ ] **2.1** Remove hardcoded users ("dane", "gwen", "albert") → replace with registration/login system
-- [ ] **2.2** Remove all `/Users/danemel/` hardcoded paths → use relative paths + config
-- [ ] **2.3** Remove "Butler", "Econ 110", "Mankiw 10e" from server.py system prompts → read from pack.yaml
+- [ ] **2.2** Remove all hardcoded absolute paths → use relative paths + config
+- [ ] **2.3** Remove professor names, course names, and textbook names from server.py system prompts → read from pack.yaml
 - [ ] **2.4** Remove hardcoded exam dates, chapter ranges, concept IDs → read from pack
 - [ ] **2.5** Remove hardcoded EXAM_WEIGHT_MAP → load from pack's exam_weights.json
 - [ ] **2.6** Remove BYU-specific references (course numbers, professor names)
@@ -175,7 +175,7 @@ cram-it/
   ```yaml
   name: "Introduction to Microeconomics"
   short_name: "Econ 101"
-  textbook: "Principles of Economics, Mankiw"
+  textbook: "Your Textbook Title"
   professor: "Dr. Smith"
   exam_format:
     questions: 40
@@ -229,7 +229,7 @@ cram-it/
 - [ ] **6.5** Write `docs/DEPLOYMENT.md` — Cloudflare tunnel, nginx, systemd
 - [ ] **6.6** Write `docs/HERMES_INTEGRATION.md` — how the AI agent ecosystem fits in
 - [ ] **6.7** Export and generalize skill files into `docs/skills/`:
-  - butler-tutor → `tutor-architecture.md` (strip BYU specifics, keep architecture)
+  - tutor-architecture → `tutor-architecture.md` (strip course specifics, keep architecture)
   - econ-graphs → `graph-rendering.md` (keep as-is, it's generic enough)
   - video-podcast → `podcast-generation.md`
   - voice-tutor → `voice-tutor.md`

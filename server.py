@@ -726,7 +726,7 @@ def agent_stream():
             if exp.get("similar_questions"):
                 for sq in exp["similar_questions"][:2]:
                     src = sq.get("source_exam") or sq.get("source") or "other"
-                    context_parts.append(f'[BUTLER VARIANT from {src}: {sq.get("text","")[:200]}]')
+                    context_parts.append(f'[SIMILAR VARIANT from {src}: {sq.get("text","")[:200]}]')
             
             # Get concept info
             db2 = sqlite3.connect(str(DB_PATH))
@@ -793,12 +793,12 @@ def agent_stream():
             pass
     
     # If they ask about slides
-    if any(w in msg_lower for w in ["slide", "butler's slide", "show slide", "lecture"]):
+    if any(w in msg_lower for w in ["slide", "lecture slide", "show slide", "lecture"]):
         try:
             if SLIDES_COL:
                 sr = SLIDES_COL.query(query_texts=[message], n_results=3)
                 if sr and sr["documents"]:
-                    context_parts.append("\n[RELEVANT BUTLER SLIDES:]")
+                    context_parts.append("\n[RELEVANT LECTURE SLIDES:]")
                     for doc, meta in zip(sr["documents"][0], sr["metadatas"][0]):
                         context_parts.append(f"  [{meta.get('deck','')} slide {meta.get('page','')}]: {doc[:200]}")
                         context_parts.append(f"  Image: /static/{meta.get('image','')}")
