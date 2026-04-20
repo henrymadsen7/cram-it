@@ -57,7 +57,10 @@ def _get_chroma():
 
 
 def _get_db():
-    return sqlite3.connect(str(DB_PATH))
+    db = sqlite3.connect(str(DB_PATH), timeout=10)
+    db.execute("PRAGMA journal_mode=WAL")
+    db.execute("PRAGMA busy_timeout=5000")
+    return db
 
 
 def _get_fsrs():
@@ -778,7 +781,7 @@ def quiz_answer(user_id, question_id, user_answer, seconds_spent=0):
 
     # Update active session stats
     cur.execute("""
-        UPDATE sessions SET questions_answered = questions_answered + 1, correct = correct + ?
+        UPDATE sessions SET questions_answered = questions_answered + 1, correct_count = correct_count + ?
         WHERE user_id = ? AND active = 1
     """, (int(correct), user_id))
 
@@ -811,7 +814,11 @@ def quiz_answer(user_id, question_id, user_answer, seconds_spent=0):
     else:
         rating = Rating.Good
 
-    card, review_log = fsrs.review_card(card, rating, now)
+    card, review_log = fsrs.repeat(card, now)[rating], None
+    if hasattr(card, 'card'):
+        # SchedulingInfo object
+        review_log = card.review_log
+        card = card.card
 
     # Save FSRS state
     cur.execute("""
