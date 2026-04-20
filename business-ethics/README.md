@@ -1,5 +1,5 @@
 # Business Ethics Final Exam - Master Study Pack
-## BYU Ethics Winter 2026 | Dr. Owens | Final Exam Prep
+## BYU Ethics Winter 2026 | Final Exam Prep
 
 **Exam format:** 32 questions | 2 hours | 106 points | Open book, open note | CLOSED AI, closed neighbor
 
