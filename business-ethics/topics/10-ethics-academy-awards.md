@@ -115,3 +115,42 @@ The Ethics Academy Awards class synthesizes the whole course:
 4. "What is a creative third alternative?" - a solution that satisfies multiple moral principles simultaneously
 5. Scenario: your manager asks you to misrepresent results in a report - what do you do?
 
+
+---
+
+## Additional Detail From Supplementary Review (Old Final Review Audio)
+
+### Moral Muteness — Extended Definition
+Moral muteness is the phenomenon where individuals NEVER talk about the legal or moral implications of strategic or business decisions. The culture becomes so focused on ROI, revenue, and strategic metrics that there is an INDIRECT SIGNAL that ethical considerations are less important than maximizing revenue.
+
+Professor's nuance: In some scenarios, the best response is to simply START SOLVING THE PROBLEM — which effectively circumnavigates the ethical tension without creating confrontation. This works great in many situations. BUT: if something is very illegal or people are going to get hurt, going around the issue becomes a bigger problem. You need to be able to respectfully and confidently WEAVE IN ethical considerations.
+
+### How to Avoid Moral Superiority
+The method: frame your moral position based on the VALUES OF THE ORGANIZATION.
+- This casts you as an organizational team player
+- It is hard to be perceived as morally superior when you are saying "let's realign with our moral foundation — the principles that have served us well"
+- Especially effective when you've joined an org whose values already align with your personal code of ethics
+
+---
+
+## Moral Balance (Jared Halverson — from supplementary review)
+
+### The Core Concept
+Virtues and moral principles come in COUNTER-BALANCING PAIRS. There is "opposition in all things," even in our moral universe.
+
+A person can feel completely justified — a sense of moral rectitude — about one moral principle, but make unethical decisions because they are UNDULY FIXATING on that one principle while discarding its counter-balancing pair.
+
+### The Juggling Analogy
+Think of two balls: Justice and Mercy. Honesty and Loyalty. Courage and Prudence.
+
+When you focus only on Justice and drop Mercy — you become cruel, even while thinking you are doing right.
+When you focus only on Mercy and drop Justice — you enable harm.
+
+The skill is NOTICING when principles are in tension and trying to HARMONIZE them rather than dropping one ball to catch the other.
+
+### Application to the Exam
+Most real ethical dilemmas are not good vs. evil. They are two GOODS in tension. This concept explains why:
+- The 4 common dilemma structures exist (justice vs. mercy, honesty vs. loyalty, etc.)
+- Creative third alternatives are valuable — they hold BOTH principles
+- Preparing in advance for dilemma structures matters
+

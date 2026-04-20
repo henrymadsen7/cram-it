@@ -160,3 +160,40 @@ Professor quote: "Go Forth to Serve - plan to make service a lifelong pursuit an
 5. "What is hyperbolic discounting and why is it ethically relevant?"
 6. "What is the difference between prescriptive and proscriptive ethics?"
 
+
+---
+
+## CSR — Extended Detail (From Supplementary Review)
+
+### Three Types of CSR
+1. Humane employee practices (treating people well inside the org)
+2. Environmental stewardship
+3. Philanthropic efforts (external community impact)
+
+### Internal Reasons for CSR
+- Leader imprinting / cascading leadership theory: founder's character and values cascade throughout the org
+- Enhanced employee identification: people want to work where their work means something
+- Morale boost: Medtronic example — brought in a pacemaker patient who did backflips onstage. Boosted morale for a FULL YEAR.
+
+### External Reasons for CSR
+- Stakeholder theory alignment: addressing externalities you produce
+- Corporate rebranding: companies are not heartless — many of the largest economies are corporations doing real good
+- Governments can't always act efficiently; corporations sometimes can
+
+### CSR Effectiveness Formula (Two Questions)
+1. What can you UNIQUELY do (capabilities) that others can't do as well?
+2. Who is HURTING because of how you do business (liabilities)? How do you address that?
+
+Align CSR to your core competencies AND address real liabilities. Generic, feel-good CSR that has no connection to your business = waste.
+
+---
+
+## Exam Format Clarification (From Supplementary Review)
+- Majority multiple choice + true/false
+- 4-5 FREE RESPONSE questions
+- ~28 questions total
+- Open book, open notes, CLOSED AI
+
+### Pro tip from professor:
+Have your MORAL RATIONALIZATION SHEET with you — the worksheet with the dilemma types, tally, rating, and counter-statements. This is a key open-note advantage.
+

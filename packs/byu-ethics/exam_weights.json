@@ -1,0 +1,36 @@
+{
+  "topics": {
+    "leader_humility": 0.15,
+    "commodification": 0.10,
+    "social_conformity": 0.07,
+    "role_binding": 0.07,
+    "moral_courage": 0.08,
+    "ethics_movies": 0.05,
+    "giving_voice_to_values": 0.10,
+    "byu_workplace": 0.05,
+    "stakeholder_theory": 0.15,
+    "conflict_of_interest": 0.05,
+    "diversity_affirmative_action": 0.07,
+    "ethical_frameworks": 0.05,
+    "kohlberg": 0.03,
+    "moral_regulation": 0.04,
+    "moral_rationalization": 0.05,
+    "csr": 0.05,
+    "crucial_conversations": 0.05
+  },
+  "high_priority_concepts": [
+    "stakeholder_theory",
+    "leader_humility",
+    "giving_voice_to_values",
+    "moral_courage",
+    "diversity_affirmative_action",
+    "conflict_of_interest",
+    "commodification"
+  ],
+  "question_types": {
+    "multiple_choice": 0.80,
+    "true_false": 0.10,
+    "free_response": 0.10
+  },
+  "notes": "Professor confirmed: majority MC/T-F, 4-5 free response. Open book, open notes, closed AI. ~28 questions. High-frequency topics per review lecture: stakeholder salience model explicitly called out as important."
+}

@@ -1,0 +1,902 @@
+[
+  {
+    "id": 1,
+    "question": "According to the professor's research, what are the THREE dimensions of leader humility in the correct developmental sequence?",
+    "choices": {
+      "A": "Confidence, teamwork, and gratitude",
+      "B": "Self-awareness, teachability, and appreciation of others/seeking mentors",
+      "C": "Integrity, ability, and service",
+      "D": "Humility, compassion, and vision"
+    },
+    "answer": "B",
+    "concept": "leader_humility",
+    "chapter": 9,
+    "difficulty": "easy",
+    "explanation": "Think of it like planting a garden. First you prepare the soil (self-awareness — knowing your strengths AND weaknesses). Then you water it (teachability — being open to learning). Then you look around and appreciate the other plants (seeing others' strengths, seeking mentors). This is a spiral — each stage builds the next. Watch out for: confusing 'confidence' with 'humility.' They are not opposites — a humble leader can be very confident."
+  },
+  {
+    "id": 2,
+    "question": "The Titanic/Olympic analogy in the leader humility lecture represents:",
+    "choices": {
+      "A": "How successful companies eventually fail due to competition",
+      "B": "Two types of leadership mindset — arrogance vs. humility",
+      "C": "The importance of having a backup plan in crisis situations",
+      "D": "How experience reduces risk in decision-making"
+    },
+    "answer": "B",
+    "concept": "leader_humility",
+    "chapter": 9,
+    "difficulty": "easy",
+    "explanation": "The Titanic sank partly because of arrogance — the captain didn't slow down or heed warnings because he was overconfident. The Olympic (sister ship) was captained with humility. The question for your life: are you captaining with Olympic humility or Titanic arrogance? Watch out for: this is about MINDSET, not just tragedy. The professor is asking you to apply this to your own leadership decisions."
+  },
+  {
+    "id": 3,
+    "question": "Andy Fastow (Enron CFO) is used as a case study in the leader humility unit primarily to illustrate:",
+    "choices": {
+      "A": "How greed inevitably leads to criminal behavior",
+      "B": "Why accountants should not hold leadership roles",
+      "C": "How exceptional ability praised too heavily can create an inflated sense of moral legitimacy",
+      "D": "The importance of external auditing in corporations"
+    },
+    "answer": "C",
+    "concept": "leader_humility",
+    "chapter": 9,
+    "difficulty": "medium",
+    "explanation": "Fastow won CFO of the Year — then went to prison. The key lesson: he had genuine, exceptional ability. But when people keep praising your ability, you start conflating 'I am great at my job' with 'I am a great person morally.' He felt like he could do no wrong because he was told he was exceptional. That inflated self-view led to his downfall. The trap: exceptional ABILITY does not equal exceptional INTEGRITY. They are separate things."
+  },
+  {
+    "id": 4,
+    "question": "A 'compressed sense of self' is best described as:",
+    "choices": {
+      "A": "True humility — accurately seeing your limitations",
+      "B": "A form of self-deception where you underestimate your strengths, preventing you from doing good",
+      "C": "Being overly focused on short-term goals instead of long-term impact",
+      "D": "Having a narrow view of your professional identity"
+    },
+    "answer": "B",
+    "concept": "leader_humility",
+    "chapter": 9,
+    "difficulty": "medium",
+    "explanation": "This is a tricky one. Many people THINK that putting yourself down = humility. It doesn't. If you underestimate your strengths, you fail to act when you could help. Think of Marty McFly in Back to the Future — he kept saying 'I can't do that.' That compressed self-view prevented him from doing good. Watch out for: the test will try to trick you into thinking compressed self = humble. It is NOT. Both inflated AND compressed are forms of self-deception."
+  },
+  {
+    "id": 5,
+    "question": "The TAGS list is a tool designed to help someone with a COMPRESSED sense of self. What does TAGS stand for?",
+    "choices": {
+      "A": "Talents, Accountability, Goals, Service",
+      "B": "Talents, Achievements, Goals, Service",
+      "C": "Trust, Awareness, Growth, Strengths",
+      "D": "Tasks, Aptitudes, Gains, Support"
+    },
+    "answer": "B",
+    "concept": "leader_humility",
+    "chapter": 9,
+    "difficulty": "easy",
+    "explanation": "TAGS = Talents, Achievements, Goals, Service. It is a decompression tool — it helps someone who undersells themselves get a more accurate, realistic view of who they are. You list past accomplishments AND future-oriented goals. The result is self-affirmation, which then gives you the confidence to also honestly acknowledge your weaknesses. Watch out for: TAGS is for COMPRESSED sense of self. SWOT analysis is for INFLATED sense of self."
+  },
+  {
+    "id": 6,
+    "question": "Steve Jobs in his second stint at Apple is described as a 'tempered narcissist' because:",
+    "choices": {
+      "A": "He learned to fake humility while remaining arrogant behind closed doors",
+      "B": "He still had drive and vision but humility tempered his caustic side, leading him to acknowledge others' contributions",
+      "C": "He completely eliminated his ego after being fired from Apple",
+      "D": "He hired humble leaders to compensate for his own arrogance"
+    },
+    "answer": "B",
+    "concept": "leader_humility",
+    "chapter": 9,
+    "difficulty": "medium",
+    "explanation": "Jobs 1.0 was toxic — he was liquidating value because of HOW he treated people. Getting fired humbled him. Jobs 2.0 still had the ambition, vision, and drive (the narcissism was still there) but it was TEMPERED. He acknowledged past mistakes. He credited others' ideas. He built team trust. Result: Apple became the most valuable company in the world. Watch out for: the lesson is NOT 'eliminate ambition.' It's 'temper it with humility.' Big difference."
+  },
+  {
+    "id": 7,
+    "question": "What is the key distinction between a 'market economy' and a 'market society'?",
+    "choices": {
+      "A": "A market economy is capitalist; a market society is socialist",
+      "B": "A market economy uses markets for goods and services; a market society applies market logic to everything, including things that shouldn't be commoditized",
+      "C": "A market society has more government regulation than a market economy",
+      "D": "A market economy focuses on international trade while a market society focuses on domestic consumption"
+    },
+    "answer": "B",
+    "concept": "commodification",
+    "chapter": 9,
+    "difficulty": "easy",
+    "explanation": "Market economy = good. We use prices and competition to allocate goods. Market SOCIETY = problem. It's when we start saying 'praise is the currency of relationships' or selling your kidney. The metaphor of the market gets applied to EVERYTHING. Think of it this way: it's fine to charge for a sandwich. It's not fine to sell your vote. Why? Because some things have a proper mode of valuation that money corrupts. Watch out for: knowing WHEN to apply the market metaphor is the actual skill being tested."
+  },
+  {
+    "id": 8,
+    "question": "When evaluating whether something should be commoditized, the 'corruption test' asks:",
+    "choices": {
+      "A": "Whether the transaction violates any laws",
+      "B": "Whether the good or service creates unfair competition",
+      "C": "Whether turning it into a market transaction treats it with a lower mode of valuation than it deserves",
+      "D": "Whether the price point is excessive relative to the product's value"
+    },
+    "answer": "C",
+    "concept": "commodification",
+    "chapter": 9,
+    "difficulty": "medium",
+    "explanation": "The corruption test is the deepest of the five. Some things are supposed to be valued with love, respect, dignity — not money. When you put a price on them, you 'corrupt' or degrade them. Example: Project Prevention paid drug-addicted mothers to be sterilized. Is treating a woman's reproductive capacity like a switch you can buy to flip off 'corrupting' it? That's what the corruption test asks. Watch out for: this is not just about legality — something can be legal and still fail the corruption test."
+  },
+  {
+    "id": 9,
+    "question": "The Ford Pinto case is cited in the commodification unit primarily to illustrate:",
+    "choices": {
+      "A": "How cost-benefit analysis can lead to ethical failures when human life is undervalued",
+      "B": "The dangers of importing foreign car designs without adequate testing",
+      "C": "How the dark side of goal-setting and inadequate staffing of critical roles can lead to catastrophic ethical failures",
+      "D": "The need for stricter government regulation of the automotive industry"
+    },
+    "answer": "C",
+    "concept": "commodification",
+    "chapter": 9,
+    "difficulty": "medium",
+    "explanation": "Ford became the first company charged with homicide as an organization. Two key lessons: (1) The recall coordinator was ONE person, massively overworked, with no real system to catch design flaws. Critical safety roles need adequate human capital. (2) Goal-setting has a dark side — perverse incentives. The focus on meeting production goals created pressure that eclipsed safety. Watch out for: this is NOT primarily about cost-benefit analysis of human lives (that's a common misread). The professor emphasized STAFFING and GOAL DESIGN."
+  },
+  {
+    "id": 10,
+    "question": "Wells Fargo's scandal illustrates which concept from the commodification unit?",
+    "choices": {
+      "A": "Corruption test — treating banking relationships as commodities",
+      "B": "The dark side of goal-setting — aggressive quotas created perverse incentives that led to fraud",
+      "C": "Social contract theory — employees violated an implied agreement with customers",
+      "D": "Role-binding — managers became so absorbed in their roles they forgot their ethics"
+    },
+    "answer": "B",
+    "concept": "commodification",
+    "chapter": 9,
+    "difficulty": "easy",
+    "explanation": "Corporate said: sign up X customers for credit cards or you're fired. Local branches were desperate. To avoid being fired, they opened fake accounts without customer knowledge — they'd create an account but never send the card, so it counted toward the quota. Classic perverse incentive: when the metric becomes the goal, people game it. Watch out for: a perverse incentive is when you design a reward system and the people following it rationally do something that hurts the actual goal. Always think: what behavior does my incentive system ACTUALLY reward?"
+  },
+  {
+    "id": 11,
+    "question": "What did Asch's conformity experiments primarily reveal about human behavior?",
+    "choices": {
+      "A": "People only follow authority when they personally agree with the instruction",
+      "B": "People conform with clearly wrong answers under social pressure, especially with strangers",
+      "C": "Educated people are more resistant to social conformity than uneducated people",
+      "D": "Social pressure only affects group decisions, not individual ones"
+    },
+    "answer": "B",
+    "concept": "social_conformity",
+    "chapter": 10,
+    "difficulty": "easy",
+    "explanation": "In Asch's study, participants were shown lines and asked which one matched. The right answer was obvious. But when planted actors all gave the wrong answer, real participants often went along with it — even though they could see with their own eyes it was wrong. Wild, right? And here's the scarier part: you're MORE likely to conform with strangers than people you know. Because you don't know strangers' moral history. Watch out for: conformity doesn't mean you're weak. It's a built-in human response. That's why you need to PREPARE for it in advance."
+  },
+  {
+    "id": 12,
+    "question": "According to the professor, what is the most powerful single action you can take to resist social conformity in a group?",
+    "choices": {
+      "A": "Leave the organization as soon as you sense pressure to conform",
+      "B": "Publicly announce your ethical position at the start of every meeting",
+      "C": "Find just one other person who shares your concern and build a small coalition",
+      "D": "Rely on your personal code of ethics and refuse to discuss the issue with others"
+    },
+    "answer": "C",
+    "concept": "social_conformity",
+    "chapter": 10,
+    "difficulty": "medium",
+    "explanation": "Asch's research showed that one dissenting voice DRAMATICALLY reduces conformity across the whole group. You don't need to convince everyone — just find ONE ally. This is exactly what happened at Enron: Sharon Watkins found Cliff Baxter. Together they had the psychological support to blow the whistle. Think of it like lifting a heavy couch: alone it's nearly impossible, with one other person it's doable. Watch out for: this is about COALITION-building, not just moral strength. Even the bravest person struggles alone against a group."
+  },
+  {
+    "id": 13,
+    "question": "The Milgram Syndrome has three components. Which of the following is NOT one of them?",
+    "choices": {
+      "A": "An authority figure giving instructions",
+      "B": "A responsibility vacuum — diffused moral accountability",
+      "C": "Peer pressure from coworkers who disapprove",
+      "D": "Incremental escalation — each step is only slightly worse than the last"
+    },
+    "answer": "C",
+    "concept": "role_binding",
+    "chapter": 10,
+    "difficulty": "medium",
+    "explanation": "The Milgram Syndrome = authority + responsibility vacuum + incremental escalation. The responsibility vacuum is key: 'I was just following orders' — when someone else is telling you what to do, you psychologically hand over moral responsibility to them. Incremental escalation is sneaky: nobody starts with 'let's commit fraud.' It starts with 'just round this number up a little.' Then a little more. Then more. Watch out for: peer pressure from coworkers is actually a SEPARATE concept (social conformity, Asch). Don't conflate these two."
+  },
+  {
+    "id": 14,
+    "question": "What is 'role-binding' and why is it ethically significant?",
+    "choices": {
+      "A": "When employees are required to sign non-disclosure agreements limiting their speech",
+      "B": "When a role activates behavioral scripts that can override your normal moral commitments",
+      "C": "When leaders use job titles to justify ethical decisions without explanation",
+      "D": "When team members bind together around a shared ethical code"
+    },
+    "answer": "B",
+    "concept": "role_binding",
+    "chapter": 10,
+    "difficulty": "medium",
+    "explanation": "Stanford Prison Experiment: random college students assigned as prison guards started acting cruelly within days — with no training, knowing it was a study. Why? Because being PUT IN a role activates schemas and scripts for that role. Think of it like autopilot kicking in. You stop asking 'what should I do morally?' and start asking 'what do people in this role do?' This is why your personal code of ethics needs to be DEEPLY ingrained — deep enough that no role assignment can override it. Watch out for: Zimbardo stopped the study because it got dangerous. The point isn't that everyone is evil — it's that roles are more powerful than we think."
+  },
+  {
+    "id": 15,
+    "question": "Moral courage requires THREE specific conditions to be present. Which answer correctly lists all three?",
+    "choices": {
+      "A": "Good intentions, institutional support, and low personal risk",
+      "B": "Commitment to moral principles, presence of risk or sacrifice, and willingness to endure",
+      "C": "Ethical training, peer support, and clear organizational guidelines",
+      "D": "Self-confidence, moral authority, and an exit strategy"
+    },
+    "answer": "B",
+    "concept": "moral_courage",
+    "chapter": 10,
+    "difficulty": "easy",
+    "explanation": "Think of moral courage like a three-legged stool — remove any leg and it falls. Leg 1: You need a moral principle at stake. Leg 2: There needs to be actual RISK — if there's no downside to doing the right thing, you don't need courage. Leg 3: You need to be willing to ENDURE — because moral courage in organizations usually plays out over months, not minutes. The professor specifically said: we romanticize courage as one heroic moment, but real moral courage is a LONG process. Watch out for: if there's no risk, it's not courage, it's just doing the easy thing."
+  },
+  {
+    "id": 16,
+    "question": "When should you use DIRECT dissent rather than INDIRECT dissent?",
+    "choices": {
+      "A": "Whenever you personally disagree with a management decision",
+      "B": "When you want to establish yourself as someone with high ethical standards",
+      "C": "When time is critical and something harmful is about to happen imminently",
+      "D": "When indirect methods have already been tried twice without success"
+    },
+    "answer": "C",
+    "concept": "moral_courage",
+    "chapter": 10,
+    "difficulty": "medium",
+    "explanation": "The professor gave a perfect example: the Challenger Space Shuttle. Engineers knew the O-rings might freeze. That was NOT the time for 'can we talk about this over a few meetings?' — that was a moment for direct: 'We should NOT launch. Lives are at stake.' Direct dissent = the 911 call of ethical tools. Most situations call for indirect first: ask for more info, frame around org values, seek alternatives. But when lives are on the line or something is about to happen in the next hour, go direct. Watch out for: most situations are NOT the Challenger scenario. Don't use direct as your default — it puts you on a moral pedestal and creates defensiveness."
+  },
+  {
+    "id": 17,
+    "question": "Thomas More in 'A Man for All Seasons' represents which primary ethical lesson?",
+    "choices": {
+      "A": "The importance of choosing country over personal conscience",
+      "B": "Sustained moral courage under mounting pressure, using strategic indirect dissent",
+      "C": "How legal systems can be used to protect individual rights against oppression",
+      "D": "The danger of religious fundamentalism in political contexts"
+    },
+    "answer": "B",
+    "concept": "ethics_movies",
+    "chapter": 10,
+    "difficulty": "easy",
+    "explanation": "Thomas More was Lord Chancellor under King Henry VIII. The king wanted him to endorse breaking from the Catholic Church. More refused — but he didn't stand up and say 'YOU ARE WRONG, YOUR HIGHNESS.' That would have gotten him killed faster. Instead, he stayed strategically SILENT — he just wouldn't say yes. 'I'm not going to tell you why I'm not supporting this, I'm just not saying I support it.' He lost everything — his job, his wealth, eventually his life — but never his integrity. Watch out for: this is about strategic INDIRECT dissent, not passive cowardice. Silence was his tactic."
+  },
+  {
+    "id": 18,
+    "question": "The '13 Lives' film teaches which primary ethical lesson?",
+    "choices": {
+      "A": "That government agencies are generally more ethical than private organizations in crisis",
+      "B": "That weighing moral principles becomes necessary when rules don't cover an unprecedented situation",
+      "C": "How international cooperation can overcome political differences",
+      "D": "The importance of expert authority in life-or-death decisions"
+    },
+    "answer": "B",
+    "concept": "ethics_movies",
+    "chapter": 10,
+    "difficulty": "medium",
+    "explanation": "The Thai cave rescue: normal medical consent laws would have prevented the doctors from operating on the boys without proper consent. But 13 children were going to die. So the rules were bent. The lesson: rules are written for NORMAL situations. But new technology, new disasters, new situations happen all the time — and sometimes the rules don't cover them. That's when you need MORAL PRINCIPLES to fall back on. Courts also look at your principles and intentions when no law applies. Watch out for: this isn't about 'rules don't matter.' It's about having principles UNDERNEATH the rules."
+  },
+  {
+    "id": 19,
+    "question": "Charles Van Doren in 'Quiz Show' is described as being 'poisoned by degrees.' This refers to:",
+    "choices": {
+      "A": "The gradual erosion of his integrity through repeated exposure to temptation and rationalization",
+      "B": "The slow damage done to his reputation by media coverage",
+      "C": "The incremental increase in the size of his deceptions over time",
+      "D": "His gradual disillusionment with the idealism he held at the start of his career"
+    },
+    "answer": "A",
+    "concept": "ethics_movies",
+    "chapter": 10,
+    "difficulty": "medium",
+    "explanation": "Van Doren was an idealist. When producers first said 'we'll give you the answers,' he said no. But the offer kept coming. Then rationalization set in: 'I'll inspire education in America.' Then it felt easier each time. Like La Fontaine's frog in slowly heating water — he didn't notice the temperature rising until it was too late. The lesson: good people can be caught in high-pressure situations. One-time temptations are easier to resist than sustained, incremental ones. Watch out for: 'I'm too smart/ethical to fall for that' is exactly what Van Doren thought."
+  },
+  {
+    "id": 20,
+    "question": "In 'Giving Voice to Values,' what are the FOUR voice strengths a person might draw on when making a values proposition?",
+    "choices": {
+      "A": "Assertiveness, empathy, persistence, and compromise",
+      "B": "Metaphors/stories, building coalitions, pragmatism, and logic/reason",
+      "C": "Authority, expertise, social proof, and scarcity",
+      "D": "Emotion, logic, credibility, and timing"
+    },
+    "answer": "B",
+    "concept": "giving_voice_to_values",
+    "chapter": 12,
+    "difficulty": "easy",
+    "explanation": "Mary Gentile's GVV framework says: everyone has a natural strength in how they persuade. (1) Metaphors and stories — you paint pictures that make people feel it. (2) Building coalitions — you gather allies before the conversation. (3) Pragmatism — you lead with 'here's the practical risk.' (4) Logic and reason — you walk through the argument systematically. Know YOURS. If you're not confrontational, don't start a fight — build a coalition instead. Watch out for: using your NON-strength is often why values advocacy fails. Play to your strengths."
+  },
+  {
+    "id": 21,
+    "question": "According to Gentile, the four most common ethical dilemma STRUCTURES you will face in business are:",
+    "choices": {
+      "A": "Legal vs. illegal, risky vs. safe, short-term vs. long-term, individual vs. group",
+      "B": "Justice vs. mercy, utilitarianism vs. deontology, long-term vs. short-term, honesty vs. loyalty",
+      "C": "Profit vs. ethics, loyalty vs. fairness, courage vs. caution, individual vs. organization",
+      "D": "Transparency vs. confidentiality, equity vs. efficiency, rules vs. relationships, present vs. future"
+    },
+    "answer": "B",
+    "concept": "giving_voice_to_values",
+    "chapter": 12,
+    "difficulty": "medium",
+    "explanation": "You won't know the SPECIFIC dilemma in advance, but you can know the general structure. It's like knowing there are only a few chess openings — you can prepare responses. Justice vs. mercy: should we follow the rule or make an exception for this person? Utilitarian vs. deontology: does the outcome justify breaking the rule? Long vs. short: does the quick win cost us long-term? Honesty vs. loyalty: do I tell the truth about my friend/colleague? Prepare an argument, story, and practical case for each type. Watch out for: most real dilemmas are a BLEND of two or more of these."
+  },
+  {
+    "id": 22,
+    "question": "A 'diplomat/team player' posture is preferred over a 'crusader/martyr' posture in values advocacy because:",
+    "choices": {
+      "A": "Crusaders are too emotional to make effective arguments",
+      "B": "Diplomats always achieve better outcomes because they avoid conflict",
+      "C": "Framing issues as a team player rather than moral superior reduces defensiveness and preserves influence",
+      "D": "Martyrdom is legally risky in organizational contexts"
+    },
+    "answer": "C",
+    "concept": "giving_voice_to_values",
+    "chapter": 12,
+    "difficulty": "medium",
+    "explanation": "When you act like a crusader — 'I am RIGHT, you are WRONG, this is immoral and I am appalled' — the other person stops thinking about your point and starts defending themselves. You've triggered their ego. A diplomat says: 'I want to make sure we're living up to our own values as an organization. Can we look at this together?' Now you're on the same team. Framing around ORGANIZATIONAL values, not your personal moral code, casts you as a team player — not a judge. Watch out for: being a diplomat doesn't mean being silent or spineless. You still say the hard thing. You just say it differently."
+  },
+  {
+    "id": 23,
+    "question": "What is the key practical advice from the BYU Grads in the Workplace unit about building relational capital?",
+    "choices": {
+      "A": "Focus on your technical skills first; relationships will follow naturally",
+      "B": "Build trust and relational capital BEFORE you need to use it to make ethical stands",
+      "C": "Prioritize relationships with senior leaders over peer relationships",
+      "D": "Keep professional and personal relationships strictly separate"
+    },
+    "answer": "B",
+    "concept": "byu_workplace",
+    "chapter": 11,
+    "difficulty": "easy",
+    "explanation": "Think of relational capital like a savings account. You can't walk into a bank on day one and ask for a big loan. You have to deposit first. If you want ethical INFLUENCE — the ability to say 'I don't think we should do this' and be listened to — you need to have already invested in relationships. The Ammon model: go in curious, wanting to serve, building trust. THEN people ask 'what do you believe? Why?' Watch out for: many people focus on building influence only when they need it. Too late. Build it before you need it."
+  },
+  {
+    "id": 24,
+    "question": "The 'Fairness for All' principle (Elder Rasband) argues that:",
+    "choices": {
+      "A": "Religious liberty and LGBTQ+ protections are fundamentally incompatible in a legal framework",
+      "B": "Religious organizations should be exempt from anti-discrimination laws",
+      "C": "Both religious liberty and LGBTQ+ protections can and should be protected simultaneously, as Utah's legislation demonstrated",
+      "D": "Individual conscience should always override organizational policy in ethical matters"
+    },
+    "answer": "C",
+    "concept": "byu_workplace",
+    "chapter": 11,
+    "difficulty": "easy",
+    "explanation": "People assume this is a zero-sum fight: if one group wins, the other loses. Elder Rasband's argument — backed by actual Utah legislation — is that you can protect BOTH. Utah passed laws that other states looked at and said 'wow, that was innovative.' You can design legal frameworks that protect religious employees from discrimination AND protect LGBTQ+ employees from discrimination. Watch out for: this is not about agreeing or disagreeing with either group's positions. It's about the principle that creative policy design can find the overlapping space."
+  },
+  {
+    "id": 25,
+    "question": "In the Stakeholder Salience Model, which THREE attributes determine who is a stakeholder and what priority they receive?",
+    "choices": {
+      "A": "Influence, interest, and investment",
+      "B": "Power, legitimacy, and urgency",
+      "C": "Size, proximity, and legal standing",
+      "D": "Resources, relationships, and risk"
+    },
+    "answer": "B",
+    "concept": "stakeholder_theory",
+    "chapter": 13,
+    "difficulty": "easy",
+    "explanation": "Power: can they actually affect the company? Do they have leverage or resources? Legitimacy: do they have a MORAL claim — is there a clear ethical connection between what the company does and their interests? Urgency: is their claim time-sensitive or critical right now? Think of it like an emergency room triage: you prioritize based on severity (urgency), whether they have a real medical condition (legitimacy), and whether they can make trouble if ignored (power). Watch out for: 'legitimacy' is the trickiest one. It means MORAL legitimacy, not just legal standing."
+  },
+  {
+    "id": 26,
+    "question": "A stakeholder who has ALL THREE attributes — power, legitimacy, and urgency — is classified as:",
+    "choices": {
+      "A": "A primary stakeholder",
+      "B": "A dominant stakeholder",
+      "C": "A definitive stakeholder",
+      "D": "A critical stakeholder"
+    },
+    "answer": "C",
+    "concept": "stakeholder_theory",
+    "chapter": 13,
+    "difficulty": "easy",
+    "explanation": "Definitive = the top of your priority list. They have power (they can affect you), legitimacy (they have a real moral claim), AND urgency (it needs attention NOW). When all three overlap, you cannot ignore them — they will and should get your immediate attention. Examples: an injured customer suing (power through legal system + legitimacy as someone your product harmed + urgency of the lawsuit). Watch out for: just because someone ONLY has power doesn't make them a legitimate stakeholder — they may just be a bully."
+  },
+  {
+    "id": 27,
+    "question": "A stakeholder with only POWER and URGENCY but NO legitimacy is classified as:",
+    "choices": {
+      "A": "Dominant",
+      "B": "Dependent",
+      "C": "Dangerous",
+      "D": "Demanding"
+    },
+    "answer": "C",
+    "concept": "stakeholder_theory",
+    "chapter": 13,
+    "difficulty": "medium",
+    "explanation": "Dangerous stakeholders have power and urgency but NO real moral claim. Think of a vocal, well-funded special interest group pushing for something that doesn't really connect to your business operations — they can cause problems (power + urgency) but their claim isn't truly legitimate. They're 'dangerous' because they can do harm even without moral grounds. Watch out for: don't confuse dangerous (P+U) with dominant (P+L). Dominant stakeholders have legitimate claims. Dangerous ones have power without legitimacy."
+  },
+  {
+    "id": 28,
+    "question": "A stakeholder with LEGITIMACY and URGENCY but NO power is classified as:",
+    "choices": {
+      "A": "Demanding",
+      "B": "Dormant",
+      "C": "Discretionary",
+      "D": "Dependent"
+    },
+    "answer": "D",
+    "concept": "stakeholder_theory",
+    "chapter": 13,
+    "difficulty": "medium",
+    "explanation": "Dependent stakeholders have a real moral claim and it's pressing — but they can't do much about it on their own. Think of a low-income community near a factory that's polluting their water. They have a legitimate claim (your operations are hurting them) and urgency (people are getting sick), but they may have no legal resources or political connections. They are DEPENDENT on someone else — maybe an advocacy group, a regulator, or a conscientious manager — to act on their behalf. Watch out for: just because someone has no power doesn't mean their claim isn't real. Dependent stakeholders deserve advocates."
+  },
+  {
+    "id": 29,
+    "question": "Why did the original version of stakeholder theory fall out of favor with corporations?",
+    "choices": {
+      "A": "It was disproven by academic research in the 1990s",
+      "B": "Corporations said it was too unwieldy — too many stakeholders to manage — and reverted to maximizing shareholder value",
+      "C": "Government regulations made it legally impractical to consider non-shareholder interests",
+      "D": "It conflicted with corporate governance requirements from stock exchanges"
+    },
+    "answer": "B",
+    "concept": "stakeholder_theory",
+    "chapter": 13,
+    "difficulty": "medium",
+    "explanation": "Business professors were telling companies: 'You need to pay attention to ALL these stakeholders — communities, environment, employees, customers, and shareholders.' Companies threw up their hands: 'There are too many. We can't make a decision without checking with 50 groups.' So they defaulted to Milton Friedman's simple answer: just maximize shareholder value. That's it. One stakeholder. Easy. The Salience Model was the SOLUTION to this problem — it gave a practical way to PRIORITIZE. Watch out for: Friedman's argument isn't stupid. The problem is it leads to SHORT-TERM, MYOPIC decision-making that ignores real consequences."
+  },
+  {
+    "id": 30,
+    "question": "Milton Friedman's counterargument to stakeholder theory is best stated as:",
+    "choices": {
+      "A": "Stakeholders should be prioritized based on their financial contribution to the firm",
+      "B": "The social responsibility of business is to increase its profits for shareholders",
+      "C": "CSR is only justified when it directly increases long-term profitability",
+      "D": "Government, not corporations, should be responsible for social welfare"
+    },
+    "answer": "B",
+    "concept": "stakeholder_theory",
+    "chapter": 13,
+    "difficulty": "easy",
+    "explanation": "Friedman's argument: when a corporation engages in charitable giving or CSR, it is spending the shareholders' money without their authorization. If you want to do good, return the dividends to shareholders and let THEM choose which charities to support. It's actually a pretty coherent argument. But the counterargument is: by ignoring externalities and secondary stakeholders, you create long-term liabilities and risks that ultimately hurt shareholders anyway. Watch out for: know BOTH sides of this argument. The exam may ask you to identify Friedman's position OR to evaluate it."
+  },
+  {
+    "id": 31,
+    "question": "In the Tesla self-driving car case from the stakeholder theory unit, the main learning was:",
+    "choices": {
+      "A": "Technology companies should not enter the automotive industry",
+      "B": "Self-driving cars will inevitably cause ethical dilemmas that cannot be resolved",
+      "C": "The Salience Model provides a practical framework for deciding which stakeholders to invite into ethically complex decisions",
+      "D": "New technology requires waiting for government regulation before deployment"
+    },
+    "answer": "C",
+    "concept": "stakeholder_theory",
+    "chapter": 13,
+    "difficulty": "medium",
+    "explanation": "If you work at Tesla and need to decide: who do we invite to help us make responsible self-driving car decisions? There are TONS of potential voices: regulators, pedestrians, passengers, insurers, other automakers, ethics professors, disability advocates, families of accident victims... You can't invite everyone. The Salience Model tells you who actually should be at the table: whoever has Power + Legitimacy + Urgency. Watch out for: the lesson is about USING the tool on real decisions, not just memorizing the categories."
+  },
+  {
+    "id": 32,
+    "question": "You discover that your brother-in-law's company is one of three vendors being evaluated for a major contract at your firm. You are on the evaluation committee. What should you do FIRST?",
+    "choices": {
+      "A": "Recuse yourself immediately from the entire process",
+      "B": "Disclose the relationship to your supervisor and the committee",
+      "C": "Ensure you evaluate your brother-in-law's company extra critically to prove your objectivity",
+      "D": "Ask your brother-in-law to withdraw his company from the bid"
+    },
+    "answer": "B",
+    "concept": "conflict_of_interest",
+    "chapter": 14,
+    "difficulty": "easy",
+    "explanation": "The professor said this clearly: the DEFAULT response to any perceived conflict of interest is DISCLOSE FIRST. Then, if disclosure isn't sufficient to protect your objectivity or the committee's confidence in your objectivity, you WITHDRAW. You don't pre-emptively withdraw — you disclose first and let the appropriate people decide. Watch out for: being extra tough on your relative to prove objectivity is NOT the solution. The conflict is about PERCEIVED objectivity, not just your internal intentions. Disclosure is the answer."
+  },
+  {
+    "id": 33,
+    "question": "Which best describes when 'withdrawal' is the appropriate response to a conflict of interest?",
+    "choices": {
+      "A": "Whenever there is any personal relationship with any party involved",
+      "B": "When disclosure alone is insufficient to protect objectivity or the appearance of objectivity",
+      "C": "Always — disclosure is never enough to resolve a conflict of interest",
+      "D": "Only when the conflict of interest is financial, not relational"
+    },
+    "answer": "B",
+    "concept": "conflict_of_interest",
+    "chapter": 14,
+    "difficulty": "medium",
+    "explanation": "Disclosure is STEP 1. Withdrawal is STEP 2, only if needed. Example: Prof. Owens was asked to review a paper from scholars on his own grant. He disclosed AND withdrew — because even with disclosure, reviewing it would create the appearance of impropriety with the granting institution. But not every conflict requires withdrawal. Sometimes disclosing it to the right people and letting others make the final call is sufficient. Watch out for: over-withdrawing can make you look guilty when you aren't. The protocol is: disclose first, then assess whether withdrawal is needed."
+  },
+  {
+    "id": 34,
+    "question": "True or False: Affirmative action has been ruled unconstitutional by the Supreme Court.",
+    "choices": {
+      "A": "True — the Supreme Court has completely banned affirmative action",
+      "B": "False — affirmative action is still legal in employment in most states, though heavily constrained",
+      "C": "True, but only in educational institutions",
+      "D": "False — affirmative action is required by federal law in all industries"
+    },
+    "answer": "B",
+    "concept": "diversity_affirmative_action",
+    "chapter": 14,
+    "difficulty": "easy",
+    "explanation": "This is a high-probability question on the exam. The professor even framed it as True/False. The answer is FALSE — affirmative action is NOT unconstitutional across the board. BUT: in EDUCATION, race as a numeric factor is banned (Harvard, U of Michigan cases). In EMPLOYMENT, affirmative action plans are still legal in most states — just not in California, Michigan, and Washington. And where legal, they must meet strict requirements: written plan, proven historical disparity, must end when disparity is rectified. Watch out for: this is nuanced. 'Education' and 'employment' have different rules."
+  },
+  {
+    "id": 35,
+    "question": "For an affirmative action plan in employment to be legal, which requirement is NOT necessary?",
+    "choices": {
+      "A": "It must be written down as a formal plan",
+      "B": "It must prove it is rectifying a historical disparity",
+      "C": "It must be approved by the Supreme Court for each organization",
+      "D": "It must end once the disparity has been rectified"
+    },
+    "answer": "C",
+    "concept": "diversity_affirmative_action",
+    "chapter": 14,
+    "difficulty": "medium",
+    "explanation": "The three legal requirements for a valid affirmative action plan in employment are: (1) Written down — it must be a concrete, formal plan, not informal practice. (2) Proves historical disparity — it must demonstrate a group has been historically underrepresented or excluded. (3) Temporary — once the disparity is fixed, the plan must end. There is NO requirement for Supreme Court approval of each individual plan. Watch out for: being banned in California, Michigan, and Washington is a testable fact — make sure you know these three states."
+  },
+  {
+    "id": 36,
+    "question": "A company wants to set diversity goals for hiring to increase representation of underrepresented groups. This is best described as:",
+    "choices": {
+      "A": "Affirmative action — it is giving preference based on race",
+      "B": "A diversity initiative — a voluntary, broad effort that is distinct from legally defined affirmative action",
+      "C": "Illegal discrimination in reverse",
+      "D": "A form of corporate social responsibility with no legal implications"
+    },
+    "answer": "B",
+    "concept": "diversity_affirmative_action",
+    "chapter": 14,
+    "difficulty": "medium",
+    "explanation": "Setting goals, expanding recruiting pipelines, mentorship programs, inclusive culture work = diversity INITIATIVES. These are voluntary and broad. Affirmative action is a specific legal program with strict legal requirements (written plan, prove disparity, must end when goal met). You can pursue diversity goals without running a legally defined affirmative action program. Watch out for: many people confuse ANY effort to increase diversity with 'affirmative action.' They are different. Know the distinction."
+  },
+  {
+    "id": 37,
+    "question": "Which of the four ethical frameworks asks: 'What kind of person does this action make me?'",
+    "choices": {
+      "A": "Utilitarianism",
+      "B": "Deontology",
+      "C": "Virtue ethics",
+      "D": "Social contract theory"
+    },
+    "answer": "C",
+    "concept": "ethical_frameworks",
+    "chapter": 5,
+    "difficulty": "easy",
+    "explanation": "Virtue ethics (Aristotle) focuses on CHARACTER, not consequences or rules. The question isn't 'will this produce the best outcome?' or 'is there a rule against this?' — it's 'would a person of genuine integrity and good character do this? And what does doing it make me?' Think of it as the mirror test: can you look in the mirror after? Watch out for: confusing virtue ethics with deontology. Deontology is about RULES and DUTIES. Virtue ethics is about WHO YOU ARE as a person."
+  },
+  {
+    "id": 38,
+    "question": "Utilitarianism says the right action is the one that:",
+    "choices": {
+      "A": "Follows established moral rules, regardless of outcomes",
+      "B": "Best reflects the virtues of the person performing it",
+      "C": "Produces the greatest good for the greatest number of people",
+      "D": "Upholds the social contract agreed upon by rational members of society"
+    },
+    "answer": "C",
+    "concept": "ethical_frameworks",
+    "chapter": 5,
+    "difficulty": "easy",
+    "explanation": "Utilitarianism = consequences matter. Jeremy Bentham and John Stuart Mill: add up all the happiness and unhappiness a decision creates. The decision that creates the MOST net happiness for the MOST people is the right one. Strength: practical, accounts for real-world impact. Weakness: can justify harming a minority to benefit a majority. Watch out for: utilitarianism and deontology often CONFLICT. An action can be the 'greatest good for most' while STILL violating someone's rights. That's the core tension."
+  },
+  {
+    "id": 39,
+    "question": "Deontological ethics (Kant) holds that:",
+    "choices": {
+      "A": "The morality of an action depends entirely on its consequences",
+      "B": "Some actions are inherently right or wrong regardless of their outcomes, based on duty and universal rules",
+      "C": "Ethics should be based on what rational people would agree to in a fair social arrangement",
+      "D": "Morality comes from cultivating virtuous character traits over time"
+    },
+    "answer": "B",
+    "concept": "ethical_frameworks",
+    "chapter": 5,
+    "difficulty": "easy",
+    "explanation": "Kant said: some things are just WRONG, full stop, even if doing them would produce a good outcome. His 'categorical imperative' says: act only according to rules you would want everyone to follow. And never treat people as mere means to an end — they are ends in themselves. Example: you cannot lie to a murderer to protect your friend, even though lying might save a life — because lying is categorically wrong. Watch out for: this can lead to rigid outcomes in real dilemmas. That's why you need ALL four frameworks, not just one."
+  },
+  {
+    "id": 40,
+    "question": "At which level of Kohlberg's moral development is a person operating when they follow rules primarily to avoid punishment?",
+    "choices": {
+      "A": "Post-Conventional — Stage 5",
+      "B": "Conventional — Stage 3",
+      "C": "Pre-Conventional — Stage 1",
+      "D": "Conventional — Stage 4"
+    },
+    "answer": "C",
+    "concept": "kohlberg",
+    "chapter": 6,
+    "difficulty": "easy",
+    "explanation": "Kohlberg's Stage 1 = obedience and punishment orientation. 'I do the right thing because I don't want to get in trouble.' Like a little kid who doesn't steal because they'll get grounded. This is the LOWEST stage. Most adults operate above this, but under pressure (like Milgram's obedience study), people can revert. Watch out for: the exam wants you to ASPIRE to stages 5-6 (Post-Conventional: principles and universal ethics) — not just recognize where you currently operate."
+  },
+  {
+    "id": 41,
+    "question": "A manager thinks: 'I've been completely honest with everyone this quarter, so it's okay if I embellish my performance metrics a little in this report.' This is an example of:",
+    "choices": {
+      "A": "Moral cleansing",
+      "B": "Moral licensing",
+      "C": "Proscriptive ethics",
+      "D": "Role-binding"
+    },
+    "answer": "B",
+    "concept": "moral_regulation",
+    "chapter": 7,
+    "difficulty": "medium",
+    "explanation": "Moral licensing = 'I've been SO good lately that I've earned the right to slip a little.' Past good behavior creates psychological permission to do wrong. This is insidious because it feels REASONABLE in the moment. Think of it like thinking you've earned a cheat day because you've been dieting — except with ethics, there are no cheat days. Watch out for: confusing moral licensing with moral cleansing. Cleansing = doing good AFTER a wrong. Licensing = using past good as PERMISSION to do wrong before it happens."
+  },
+  {
+    "id": 42,
+    "question": "The difference between prescriptive and proscriptive ethics is:",
+    "choices": {
+      "A": "Prescriptive = written rules; proscriptive = unwritten social norms",
+      "B": "Prescriptive = proactively doing good; proscriptive = avoiding doing wrong",
+      "C": "Prescriptive = individual ethics; proscriptive = organizational ethics",
+      "D": "Prescriptive = short-term ethics; proscriptive = long-term ethics"
+    },
+    "answer": "B",
+    "concept": "moral_regulation",
+    "chapter": 7,
+    "difficulty": "easy",
+    "explanation": "Proscriptive ethics = 'Thou shalt NOT...' — it's a list of things to avoid. Most legal systems are proscriptive. Prescriptive ethics = 'Go DO good actively.' The professor said: shift your focus toward PRESCRIPTIVE ethics. Don't just be someone who doesn't steal and doesn't lie. Be someone who actively seeks opportunities to help, serve, and do good. Watch out for: most people default to proscriptive thinking ('as long as I'm not doing anything wrong, I'm ethical'). That's the floor. Prescriptive is the ceiling."
+  },
+  {
+    "id": 43,
+    "question": "Which of the following is an example of the moral rationalization tactic called 'denial of injury'?",
+    "choices": {
+      "A": "'Everyone else does it, so who are you to judge?'",
+      "B": "'I was just following the orders from corporate — it wasn't my call'",
+      "C": "'Nobody actually got hurt, so it's not really that big a deal'",
+      "D": "'I did it for my team — they were counting on me'"
+    },
+    "answer": "C",
+    "concept": "moral_rationalization",
+    "chapter": 8,
+    "difficulty": "easy",
+    "explanation": "Denial of injury: 'If nobody was hurt, it wasn't really wrong.' This one is sneaky because sometimes the harm IS hard to see. A few fake accounts at Wells Fargo — 'nobody was really hurt.' But millions of fake accounts = massive harm to millions of people's credit scores. Just because harm is INVISIBLE or DISTRIBUTED doesn't mean it didn't happen. Watch out for: recognize all six tactics (denial of responsibility, injury, victim; appeal to higher loyalties; condemnation of condemners; displacement of responsibility). Each one has a counter-statement."
+  },
+  {
+    "id": 44,
+    "question": "The moral rationalization: 'I did it for my family / to protect my team' is categorized as:",
+    "choices": {
+      "A": "Denial of responsibility",
+      "B": "Appeal to higher loyalties",
+      "C": "Condemnation of condemners",
+      "D": "Displacement of responsibility"
+    },
+    "answer": "B",
+    "concept": "moral_rationalization",
+    "chapter": 8,
+    "difficulty": "easy",
+    "explanation": "Appeal to higher loyalties: justify the wrong by pointing to a higher good — family, team, country, God. 'Yes I falsified the documents, but I did it to keep our team's jobs.' The rationalization works because the loyalty is REAL and GOOD — family and team DO matter. But it's being used to override ethical principles. Watch out for: this is the tactic the Quiz Show producers used on Van Doren — 'you will INSPIRE education.' They appealed to his real, legitimate ideal of education to rationalize the fraud."
+  },
+  {
+    "id": 45,
+    "question": "What is 'moral muteness' as described in the Ethics Academy Awards unit?",
+    "choices": {
+      "A": "The inability to identify ethical issues in business situations",
+      "B": "The practice of not discussing the ethical or legal implications of business decisions, creating a culture where ethics is minimized",
+      "C": "Choosing to stay silent during unethical conversations to protect yourself legally",
+      "D": "Being unable to articulate your moral principles clearly under pressure"
+    },
+    "answer": "B",
+    "concept": "crucial_conversations",
+    "chapter": 15,
+    "difficulty": "medium",
+    "explanation": "Moral muteness is when an organization develops a culture where NOBODY talks about the ethical implications of decisions. Meetings are all about ROI, strategic horizons, revenue projections — and there's an indirect signal that ethical and legal considerations are less important than the numbers. Nobody is explicitly told 'don't raise ethics' — but when the culture makes it awkward or career-risky, people go quiet. Result: ethical disasters because nobody spoke up. Watch out for: the opposite failure is moral SUPERIORITY — lecturing everyone. Both fail. The goal is confident, skilled ethical advocacy."
+  },
+  {
+    "id": 46,
+    "question": "What is a 'creative third alternative' and why is it valuable in ethical dilemmas?",
+    "choices": {
+      "A": "A compromise position that splits the difference between two ethical positions",
+      "B": "An option C that satisfies multiple moral principles simultaneously rather than forcing a binary choice",
+      "C": "A legal workaround that avoids ethical issues entirely",
+      "D": "A third party mediator who helps resolve ethical disagreements between parties"
+    },
+    "answer": "B",
+    "concept": "crucial_conversations",
+    "chapter": 15,
+    "difficulty": "medium",
+    "explanation": "Most ethical dilemmas get presented as A or B: 'We either fire this person or cover up the mistake.' Both options are bad. A creative third alternative — option C — tries to satisfy multiple principles: remediate with the customer (integrity) AND develop the employee (fairness and growth). Think of it like a chef who gets two orders that seem to conflict. Instead of choosing one, they find a way to use the same prep work for both. Watch out for: creative third alternatives require PREPARATION. You find them by thinking before the crisis, not in the heat of the moment."
+  },
+  {
+    "id": 47,
+    "question": "CSR (Corporate Social Responsibility) is defined by the professor as:",
+    "choices": {
+      "A": "A company's legal obligations to shareholders and employees",
+      "B": "Voluntary efforts to have a positive impact on society that exceed legal, commercial, and ethical expectations",
+      "C": "A marketing strategy for improving brand perception among consumers",
+      "D": "Government-mandated programs requiring corporations to invest in community development"
+    },
+    "answer": "B",
+    "concept": "csr",
+    "chapter": 15,
+    "difficulty": "easy",
+    "explanation": "CSR = going BEYOND what you're required to do. It's voluntary. Three types: humane employee practices (treating people well), environmental stewardship, and philanthropic efforts. The key word is 'voluntary' — not because the law requires it, not because it's the minimum standard, but because you actually want to do good. Watch out for: just because something is called 'CSR' doesn't mean it's genuine. Performative CSR — done purely for PR — backfires when people see through it."
+  },
+  {
+    "id": 48,
+    "question": "The Medtronic pacemaker company example from the CSR unit illustrates:",
+    "choices": {
+      "A": "How medical devices companies face unique regulatory burdens",
+      "B": "How connecting employees to the beneficiaries of their work dramatically boosts morale",
+      "C": "The importance of transparent reporting in corporate social responsibility",
+      "D": "How CSR initiatives should focus on environmental impact"
+    },
+    "answer": "B",
+    "concept": "csr",
+    "chapter": 15,
+    "difficulty": "medium",
+    "explanation": "Medtronic made pacemakers. Morale was low — people doing call center work felt disconnected from meaning. Then they brought in a patient who had received a pacemaker as a young gymnast. He walked onstage and did backflips — because of their work. The whole company was in tears. That one event boosted morale for a YEAR. The lesson: CSR is also an internal strategy. When employees feel their work connects to something real and good, they engage more deeply. Watch out for: the professor's point is about INTERNAL reasons for CSR (morale, employee identification, leader imprinting), not just external PR."
+  },
+  {
+    "id": 49,
+    "question": "The 'leader imprinting theory' (also called cascading leadership theory) related to CSR states:",
+    "choices": {
+      "A": "Leaders who engage in CSR create legal obligations for future leaders",
+      "B": "A founder's character and values cascade throughout and shape what an organization becomes",
+      "C": "CSR programs must be approved by the board of directors to have organizational impact",
+      "D": "The most effective CSR programs are those personally championed by the CEO"
+    },
+    "answer": "B",
+    "concept": "csr",
+    "chapter": 15,
+    "difficulty": "medium",
+    "explanation": "Leader imprinting: the values and character of a founder don't just stay with that person — they get embedded in the CULTURE, structures, and identity of the organization. Think of it like a wax seal: the founder presses their values into the organization, and that impression persists. This is one reason why organizations engage in CSR authentically — because it aligns with who the founder was and what they stood for. Watch out for: this is different from saying 'CSR is just PR.' When CSR flows from genuine founder values, it's more authentic and sustainable."
+  },
+  {
+    "id": 50,
+    "question": "Which of the following best describes an EFFECTIVE CSR initiative according to the professor's framework?",
+    "choices": {
+      "A": "One that donates the maximum percentage of revenue to charity",
+      "B": "One that receives the most positive media coverage",
+      "C": "One aligned with the company's core capabilities and addressing liabilities incurred through its business operations",
+      "D": "One designed by the marketing department to address public perception issues"
+    },
+    "answer": "C",
+    "concept": "csr",
+    "chapter": 15,
+    "difficulty": "medium",
+    "explanation": "The professor's effectiveness formula: CAPABILITY + LIABILITY. Capability = what can you uniquely do that others can't? A pharmaceutical company volunteering at a soup kitchen is fine, but it's generic. A pharmaceutical company using its R&D expertise to develop affordable drugs for neglected diseases? That's capability-aligned CSR. Liability = what harms does your business create? A mining company restoring land it excavated = addressing your actual liability. Watch out for: 'maximum donation' and 'best PR' both describe quantity, not quality or effectiveness. The question is about FIT."
+  },
+  {
+    "id": 51,
+    "question": "A student says: 'I don't have to worry about conformity pressures — I know what I believe and I'm strong enough to resist.' Based on the professor's teaching, the best response is:",
+    "choices": {
+      "A": "That confidence is exactly the mindset needed to resist social pressure",
+      "B": "That confidence without preparation is actually a warning sign — the Asch studies show even confident, smart people conform, especially with strangers",
+      "C": "They are probably right if they have a strong personal code of ethics already",
+      "D": "That as long as they stay honest with themselves, they will be fine"
+    },
+    "answer": "B",
+    "concept": "social_conformity",
+    "chapter": 10,
+    "difficulty": "hard",
+    "explanation": "This is exactly the trap. Every person in the Milgram study thought they were the kind of person who would refuse. Most didn't. Confidence in your ethics without PREPARATION and AWARENESS of these mechanisms is actually a vulnerability — because overconfidence means you don't prepare. The professor wants you to understand that these mechanisms (conformity, role-binding, Milgram syndrome) act on ALL people, especially under stress. Knowing they exist is your first defense. Watch out for: this is an application question testing whether you really understand, not just memorized."
+  },
+  {
+    "id": 52,
+    "question": "A manager framing an ethical concern as 'I think this conflicts with our commitment to customer trust — a value we've built this company on' rather than 'I personally find this morally wrong' is using which strategy?",
+    "choices": {
+      "A": "Moral superiority positioning",
+      "B": "Framing around organizational values to maintain a team-player posture",
+      "C": "Direct dissent",
+      "D": "Moral cleansing through public advocacy"
+    },
+    "answer": "B",
+    "concept": "giving_voice_to_values",
+    "chapter": 12,
+    "difficulty": "medium",
+    "explanation": "This is GVV + Ethics Academy Awards combined. When you say 'I personally find this wrong,' you put yourself above others. When you say 'this conflicts with OUR values as a company,' you're on the same team — you're inviting everyone to live up to what they already said they believe in. It's much harder to dismiss because the other person would have to argue against their own stated values. Watch out for: this technique only works if you've actually internalized the org's values — don't fake it. If the org doesn't really have those values, this approach won't work and you have a deeper problem."
+  },
+  {
+    "id": 53,
+    "question": "Which combination of attributes makes a stakeholder 'Dominant' in the Salience Model?",
+    "choices": {
+      "A": "Power and Urgency only",
+      "B": "Legitimacy and Urgency only",
+      "C": "Power and Legitimacy only",
+      "D": "Power only"
+    },
+    "answer": "C",
+    "concept": "stakeholder_theory",
+    "chapter": 13,
+    "difficulty": "easy",
+    "explanation": "Dominant = Power + Legitimacy (but NOT Urgency right now). They have real moral claim AND the ability to affect you — but it's not an immediate crisis. Think of a major institutional shareholder: they have real power over the company AND a legitimate claim as owners, but they're not demanding immediate action today. They are on your radar but not in the emergency zone. Watch out for: the Venn diagram has 7 categories plus non-stakeholder. Know them all — Power+Urgency = Dangerous, Legitimacy+Urgency = Dependent, Power+Legitimacy = Dominant."
+  },
+  {
+    "id": 54,
+    "question": "The professor said the Stakeholder Salience Model solves a key problem. What was that problem?",
+    "choices": {
+      "A": "Companies had no way to measure the financial impact of stakeholder demands",
+      "B": "The original stakeholder theory had no way to tell you WHO IS IN vs. WHO IS OUT — it couldn't prioritize",
+      "C": "Companies couldn't identify who their secondary stakeholders were",
+      "D": "The model provides legal protection against stakeholder lawsuits"
+    },
+    "answer": "B",
+    "concept": "stakeholder_theory",
+    "chapter": 13,
+    "difficulty": "medium",
+    "explanation": "The original theory said 'attend to all stakeholders' but gave no framework for prioritization. So companies were overwhelmed. The Salience Model's KEY innovation: it tells you definitively who IS and ISN'T a stakeholder (none of the three attributes = non-stakeholder) AND it ranks them by how many attributes they have. This made stakeholder theory ACTIONABLE. Watch out for: primary/secondary is the OLD framework. Power/Legitimacy/Urgency is the NEW one. The professor clearly favors the new Salience Model for actual practice."
+  },
+  {
+    "id": 55,
+    "question": "The 'Moral Balance' concept from the supplementary lecture (Jared Halverson) teaches that:",
+    "choices": {
+      "A": "Moral decisions require balancing short-term costs against long-term gains",
+      "B": "Virtues and moral principles often come in counter-balancing pairs, and fixating on one while discarding its pair leads to poor decisions",
+      "C": "Ethical leaders must balance the needs of all stakeholders equally",
+      "D": "Individual moral development must balance self-improvement with service to others"
+    },
+    "answer": "B",
+    "concept": "crucial_conversations",
+    "chapter": 15,
+    "difficulty": "medium",
+    "explanation": "Think of juggling. Each moral principle has a partner — justice AND mercy, honesty AND loyalty, courage AND prudence. If you fixate entirely on justice and drop mercy, you become cruel. If you fixate entirely on mercy and drop justice, you enable harm. The skill is holding BOTH balls in the air — noticing when they're in tension and trying to harmonize them rather than dropping one. This is why real ethical decisions are hard: it's not good vs. evil, it's usually two GOODS in tension. Watch out for: most ethical failures aren't people choosing bad over good — they're people choosing one good so intensely they trample the other."
+  },
+  {
+    "id": 56,
+    "question": "Paul Lambert's closing argument in the BYU Grads unit was that the best professional you can be is:",
+    "choices": {
+      "A": "The most technically skilled person in your field",
+      "B": "The most culturally adaptable person on your team",
+      "C": "The best disciple of your faith you can be — and this applies equally to colleagues of all faiths",
+      "D": "The person most committed to your organization's mission"
+    },
+    "answer": "C",
+    "concept": "byu_workplace",
+    "chapter": 11,
+    "difficulty": "easy",
+    "explanation": "Lambert's argument: a company that fosters faith-friendliness — meaning it respects and supports employees living out their deepest values, whatever their religion — gets more out of its human capital. A great Muslim employee practicing their faith fully will be a better, more principled professional. Same for LDS, Jewish, Hindu, Catholic colleagues. The business case for faith-friendliness is strong. Watch out for: this is not about religious endorsement by the company. It's about creating a workplace where people's deepest values are respected, which leads to greater integrity and commitment."
+  },
+  {
+    "id": 57,
+    "question": "SCENARIO: You are a manager and your VP asks you to include revenue projections in a report that you believe are significantly overstated. Using the correct sequence of methods from class, what do you do FIRST?",
+    "choices": {
+      "A": "Refuse directly: 'I am not going to include numbers I believe are false'",
+      "B": "Ask for more information: 'Can you walk me through the assumptions behind these projections?'",
+      "C": "Go to HR and file a report immediately",
+      "D": "Include the numbers but add a footnote disclaiming their accuracy"
+    },
+    "answer": "B",
+    "concept": "moral_courage",
+    "chapter": 10,
+    "difficulty": "hard",
+    "explanation": "The protocol: indirect first, direct only when needed. Asking for more information is INDIRECT dissent. It slows things down, buys time, and may reveal the VP hasn't thought it through — maybe they're working from a different data source. It also doesn't create an adversarial confrontation. If after understanding the reasoning you still believe they're false AND they want you to proceed, THEN you escalate: frame around org values ('our financial reporting standards require accuracy'), seek alternatives ('can we reframe these as aspirational targets?'), and if all else fails — direct refusal. Watch out for: going to HR first is usually too aggressive for a first step. Exhaust indirect options first."
+  },
+  {
+    "id": 58,
+    "question": "SCENARIO: A company produces cleaning chemicals. They discover their manufacturing process releases low levels of a pollutant into a nearby river. Residents haven't organized or filed complaints. Using the Salience Model, how would you classify these residents?",
+    "choices": {
+      "A": "Non-stakeholders — they haven't made any claims yet",
+      "B": "Dominant — they have legitimacy and power",
+      "C": "Dependent — they have legitimacy and urgency but limited power to force action",
+      "D": "Dangerous — they have power and urgency but no legitimate claim"
+    },
+    "answer": "C",
+    "concept": "stakeholder_theory",
+    "chapter": 13,
+    "difficulty": "hard",
+    "explanation": "Walk through the framework: Legitimacy? YES — there is a clear moral connection between the company's operations and the residents' health. Urgency? YES — ongoing pollution creates a time-sensitive health concern. Power? LIMITED — unorganized residents haven't mobilized resources, legal action, or media attention yet. That gives L+U without P = DEPENDENT. They need an advocate. And here's the strategic insight: dependent stakeholders can BECOME definitive fast if they gain power (an attorney, a news story, a regulator takes notice). Smart companies address dependent stakeholders BEFORE they gain power. Watch out for: classifying them as non-stakeholders because they haven't complained. Legitimacy doesn't require someone to be vocal."
+  },
+  {
+    "id": 59,
+    "question": "SCENARIO: You've been asked to serve on a hiring committee. Midway through the process, you realize one candidate is your former professor who once gave you a great recommendation letter. What is the correct response?",
+    "choices": {
+      "A": "Recuse yourself immediately — this is an automatic disqualification from the committee",
+      "B": "Do nothing — past positive relationships don't constitute a conflict of interest",
+      "C": "Disclose the relationship to the committee and your supervisor, then assess whether withdrawal is needed",
+      "D": "Score that candidate extra critically to cancel out any unconscious bias in your favor"
+    },
+    "answer": "C",
+    "concept": "conflict_of_interest",
+    "chapter": 14,
+    "difficulty": "hard",
+    "explanation": "This is a real gray area — the professor using this class as an example. There IS a prior relationship that could affect your objectivity (you feel grateful/positive toward this person). The correct move: disclose first. Tell the committee: 'I want to flag that I have a prior relationship with Candidate X — they wrote me a recommendation letter. I want to be transparent about this.' Then let the supervisor and committee decide whether you should withdraw or can continue with that disclosure on the table. Watch out for: scoring them harder to 'balance out' doesn't solve the conflict — it actually introduces a different bias. Disclosure is the only clean solution."
+  },
+  {
+    "id": 60,
+    "question": "The professor said you should bring your 'moral rationalization sheet' to the exam. This refers to material that lists:",
+    "choices": {
+      "A": "All the Supreme Court cases related to business ethics decisions",
+      "B": "The 13 dilemma types, the rationalization tactics and their counter-statements, and the ratings",
+      "C": "A personal code of ethics you have written for the class",
+      "D": "A summary of all the guest speaker talks from the semester"
+    },
+    "answer": "B",
+    "concept": "moral_rationalization",
+    "chapter": 8,
+    "difficulty": "medium",
+    "explanation": "From the supplementary review: the professor specifically said 'the moral neutralization sheet with the tally, the rating, and the counterstatements' is a good thing to have during the exam. This refers to the worksheet from the moral rationalization unit that lists all the rationalization tactics (denial of responsibility, denial of injury, appeal to higher loyalties, etc.), how to rate them for moral defensibility, and counter-statements you can use to challenge each one. Have this ready. Watch out for: this is open book / open NOTES. Having organized, well-labeled notes with frameworks and checklists is a MAJOR advantage."
+  }
+]
