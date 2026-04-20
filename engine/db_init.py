@@ -55,7 +55,8 @@ CREATE TABLE IF NOT EXISTS questions (
     parent_question_id TEXT,
     source_url        TEXT,
     difficulty        TEXT DEFAULT 'medium',
-    explanation       TEXT
+    explanation       TEXT,
+    flagged           INTEGER DEFAULT 0
 );
 
 -- Users
