@@ -2,127 +2,349 @@
   "leader_humility": {
     "name": "Leader Humility",
     "chapter": 9,
-    "prereqs": ["self_awareness"],
-    "keywords": ["humility", "titanic", "olympic", "self-awareness", "teachability", "mentors", "tags", "swot", "narcissism", "steve jobs", "fastow"],
+    "prereqs": [
+      "self_awareness"
+    ],
+    "keywords": [
+      "humility",
+      "titanic",
+      "olympic",
+      "self-awareness",
+      "teachability",
+      "mentors",
+      "tags",
+      "swot",
+      "narcissism",
+      "steve jobs",
+      "fastow"
+    ],
     "description": "3 dimensions: self-awareness, teachability, appreciation of others. Accurate sense of self = integrity + ability. Inflated (dangerous) vs compressed (also bad). TAGS list = decompression. SWOT = deflation. Steve Jobs = tempered narcissist."
   },
   "self_awareness": {
     "name": "Self-Awareness",
     "chapter": 4,
     "prereqs": [],
-    "keywords": ["revisionary ethics", "forecasting errors", "self-growth model", "habits"],
+    "keywords": [
+      "revisionary ethics",
+      "forecasting errors",
+      "self-growth model",
+      "habits"
+    ],
     "description": "Foundation of humility and ethical development. Revisionary ethics = rewriting memory to look better. Forecasting errors = misjudging future behavior. Self-Growth Model: awareness -> reflection -> action -> habit -> character."
   },
   "commodification": {
     "name": "Commodification of Society",
     "chapter": 9,
     "prereqs": [],
-    "keywords": ["market economy", "market society", "commoditize", "pinto", "wells fargo", "project prevention", "perverse incentive", "disneyland"],
+    "keywords": [
+      "market economy",
+      "market society",
+      "commoditize",
+      "pinto",
+      "wells fargo",
+      "project prevention",
+      "perverse incentive",
+      "disneyland"
+    ],
     "description": "5 tests: fairness/equality, coercion/rights, corruption, social value, proper mode of valuation. Market economy vs market society. Dark side of goal setting (Wells Fargo). Pinto case = Ford charged with homicide, overworked recall coordinator."
   },
   "social_conformity": {
     "name": "Social Conformity (Asch)",
     "chapter": 10,
     "prereqs": [],
-    "keywords": ["asch", "conformity", "dissent", "strangers", "error signal", "coalition"],
+    "keywords": [
+      "asch",
+      "conformity",
+      "dissent",
+      "strangers",
+      "error signal",
+      "coalition"
+    ],
     "description": "Asch studies: people conform even when objectively wrong. More likely to conform with strangers. One dissenting voice breaks the spell. Creates neurological error signal (physically uncomfortable). Sharon Watkins + Cliff Baxter = coalition of two."
   },
   "role_binding": {
     "name": "Role Binding (Stanford Prison)",
     "chapter": 10,
-    "prereqs": ["social_conformity"],
-    "keywords": ["zimbardo", "stanford prison", "role", "scripts", "schemas", "milgram"],
+    "prereqs": [
+      "social_conformity"
+    ],
+    "keywords": [
+      "zimbardo",
+      "stanford prison",
+      "role",
+      "scripts",
+      "schemas",
+      "milgram"
+    ],
     "description": "When assigned a role, brain activates scripts that can override moral identity. Zimbardo prison experiment. Milgram: obedience + responsibility vacuum + incremental escalation. We ALWAYS have a choice."
   },
   "moral_courage": {
     "name": "Moral Courage",
     "chapter": 10,
-    "prereqs": ["role_binding"],
-    "keywords": ["moral courage", "risk", "endurance", "principles", "dissent", "direct", "indirect"],
+    "prereqs": [
+      "role_binding"
+    ],
+    "keywords": [
+      "moral courage",
+      "risk",
+      "endurance",
+      "principles",
+      "dissent",
+      "direct",
+      "indirect"
+    ],
     "description": "Requires 3 things: commitment to moral principles + risk present + willingness to endure. Usually long process not one moment. Direct dissent = state clearly wrong. Indirect dissent = ask for info, frame around org values, seek alternatives."
   },
   "ethics_movies": {
     "name": "Ethics Movie Case",
     "chapter": 10,
-    "prereqs": ["moral_courage"],
-    "keywords": ["thomas more", "man for all seasons", "13 lives", "quiz show", "van doren", "integrity", "temptation"],
+    "prereqs": [
+      "moral_courage"
+    ],
+    "keywords": [
+      "thomas more",
+      "man for all seasons",
+      "13 lives",
+      "quiz show",
+      "van doren",
+      "integrity",
+      "temptation"
+    ],
     "description": "3 films: A Man for All Seasons (sustained courage, indirect dissent), 13 Lives (weighing principles when rules fail), Quiz Show (repeated temptation erodes resolve, rationalization, weak actor takes fall)."
   },
   "giving_voice_to_values": {
     "name": "Giving Voice to Values",
     "chapter": 12,
     "prereqs": [],
-    "keywords": ["voice strengths", "metaphors", "coalitions", "pragmatism", "logic", "dilemma types", "diplomat", "crusader", "values proposition"],
+    "keywords": [
+      "voice strengths",
+      "metaphors",
+      "coalitions",
+      "pragmatism",
+      "logic",
+      "dilemma types",
+      "diplomat",
+      "crusader",
+      "values proposition"
+    ],
     "description": "4 voice strengths: metaphors/stories, building coalitions, pragmatism, logic/reason. 4 dilemma types: justice vs mercy, utilitarian vs deontology, long vs short term, honesty vs loyalty. Diplomat/team player posture beats crusader."
   },
   "byu_workplace": {
     "name": "BYU Grads in the Workplace",
     "chapter": 11,
-    "prereqs": ["giving_voice_to_values"],
-    "keywords": ["relational capital", "professionalism", "human literacy", "pluralism", "ammon", "happy hour", "fairness for all", "lgbtq", "religious liberty"],
+    "prereqs": [
+      "giving_voice_to_values"
+    ],
+    "keywords": [
+      "relational capital",
+      "professionalism",
+      "human literacy",
+      "pluralism",
+      "ammon",
+      "happy hour",
+      "fairness for all",
+      "lgbtq",
+      "religious liberty"
+    ],
     "description": "Build relational capital BEFORE needing it. Ammon model: serve first, build trust. Happy hour: show up for first one (primacy effect). Fairness for All: protect both religious liberty AND LGBTQ rights. Great clarity in principles, great charity in practice."
   },
   "stakeholder_theory": {
     "name": "Stakeholder Theory",
     "chapter": 13,
     "prereqs": [],
-    "keywords": ["stakeholder", "salience", "power", "legitimacy", "urgency", "definitive", "dominant", "dependent", "dangerous", "venn", "friedman", "primary", "secondary"],
+    "keywords": [
+      "stakeholder",
+      "salience",
+      "power",
+      "legitimacy",
+      "urgency",
+      "definitive",
+      "dominant",
+      "dependent",
+      "dangerous",
+      "venn",
+      "friedman",
+      "primary",
+      "secondary"
+    ],
     "description": "HIGHEST PRIORITY TOPIC. Salience model: Power + Legitimacy + Urgency. All 3 = Definitive (top priority). P+L = Dominant. L+U = Dependent. P+U = Dangerous. None = Non-stakeholder. Friedman counter: just maximize shareholder value. Pros: long-term thinking, CSR. Cons: slower decisions, performative CSR risk."
   },
   "conflict_of_interest": {
     "name": "Conflict of Interest",
     "chapter": 14,
-    "prereqs": ["stakeholder_theory"],
-    "keywords": ["conflict of interest", "disclose", "withdraw", "nepotism", "objectivity"],
+    "prereqs": [
+      "stakeholder_theory"
+    ],
+    "keywords": [
+      "conflict of interest",
+      "disclose",
+      "withdraw",
+      "nepotism",
+      "objectivity"
+    ],
     "description": "ALWAYS DISCLOSE. Then withdraw if necessary. When another role compromises your objectivity as an organizational decision-maker. Nepotism = family role vs manager role. Two steps: 1) disclose 2) withdraw."
   },
   "diversity_affirmative_action": {
     "name": "Diversity and Affirmative Action",
     "chapter": 14,
     "prereqs": [],
-    "keywords": ["diversity", "affirmative action", "unconstitutional", "harvard", "michigan", "quota", "race", "employment", "education"],
+    "keywords": [
+      "diversity",
+      "affirmative action",
+      "unconstitutional",
+      "harvard",
+      "michigan",
+      "quota",
+      "race",
+      "employment",
+      "education"
+    ],
     "description": "NOT the same thing. Affirmative action is NOT unconstitutional (false). Education: race-based numeric factors banned, case-by-case OK. Employment: still legal except CA, MI, WA. Requirements: written, proves disparity, temporary. Human capital decisions = highest lawsuit risk."
   },
   "crucial_conversations": {
     "name": "Ethics Academy Awards / Crucial Conversations",
     "chapter": 15,
-    "prereqs": ["giving_voice_to_values"],
-    "keywords": ["moral muteness", "moral superiority", "creative third alternative", "high stakes", "crucial conversation"],
+    "prereqs": [
+      "giving_voice_to_values"
+    ],
+    "keywords": [
+      "moral muteness",
+      "moral superiority",
+      "creative third alternative",
+      "high stakes",
+      "crucial conversation"
+    ],
     "description": "Moral muteness = staying silent. Moral superiority = acting holier-than-thou. Both fail. Prepare in advance: identify conflicting principles, find creative third alternative, frame around org values, use your voice strengths."
   },
   "ethical_frameworks": {
     "name": "The 4 Ethical Frameworks",
     "chapter": 5,
     "prereqs": [],
-    "keywords": ["virtue ethics", "utilitarianism", "deontology", "social contract", "kant", "aristotle"],
+    "keywords": [
+      "virtue ethics",
+      "utilitarianism",
+      "deontology",
+      "social contract",
+      "kant",
+      "aristotle"
+    ],
     "description": "Virtue ethics: what kind of person does this make me? Utilitarianism: greatest good for greatest number. Deontology: rule-based duty regardless of outcome. Social contract: what would rational people agree to? Know all 4."
   },
   "kohlberg": {
     "name": "Kohlberg's Moral Development",
     "chapter": 6,
-    "prereqs": ["ethical_frameworks"],
-    "keywords": ["kohlberg", "pre-conventional", "conventional", "post-conventional", "stages"],
+    "prereqs": [
+      "ethical_frameworks"
+    ],
+    "keywords": [
+      "kohlberg",
+      "pre-conventional",
+      "conventional",
+      "post-conventional",
+      "stages"
+    ],
     "description": "3 levels: Pre-Conventional (avoid punishment/seek reward), Conventional (rules/social norms), Post-Conventional (principles/universal ethics). Goal: operate at stage 5-6."
   },
   "moral_regulation": {
     "name": "Moral Regulation",
     "chapter": 7,
     "prereqs": [],
-    "keywords": ["moral licensing", "moral cleansing", "prescriptive", "proscriptive", "mindfulness"],
+    "keywords": [
+      "moral licensing",
+      "moral cleansing",
+      "prescriptive",
+      "proscriptive",
+      "mindfulness"
+    ],
     "description": "Moral licensing: past good behavior creates permission to slip. Moral cleansing: doing good to offset wrong. Prescriptive = proactively do good. Proscriptive = avoid doing wrong. Aim for prescriptive."
   },
   "moral_rationalization": {
     "name": "Moral Rationalization",
     "chapter": 8,
-    "prereqs": ["moral_regulation"],
-    "keywords": ["rationalization", "denial", "responsibility", "loyalty", "condemn", "displacement"],
+    "prereqs": [
+      "moral_regulation"
+    ],
+    "keywords": [
+      "rationalization",
+      "denial",
+      "responsibility",
+      "loyalty",
+      "condemn",
+      "displacement"
+    ],
     "description": "Tactics: denial of responsibility, denial of injury, appeal to higher loyalties, condemnation of condemners, displacement of responsibility. Know counters to each. Quiz Show = rationalization dressed as idealism."
   },
   "csr": {
     "name": "Corporate Social Responsibility",
     "chapter": 15,
-    "prereqs": ["stakeholder_theory"],
-    "keywords": ["csr", "corporate social responsibility", "externalities", "shareholder", "friedman"],
+    "prereqs": [
+      "stakeholder_theory"
+    ],
+    "keywords": [
+      "csr",
+      "corporate social responsibility",
+      "externalities",
+      "shareholder",
+      "friedman"
+    ],
     "description": "Companies taking responsibility beyond legal requirements. Stakeholder theory leads to CSR. Genuine CSR = strong business case. Performative CSR backfires. Friedman argument: return dividends and let shareholders choose charities."
+  },
+  "hedonic_eudemonic": {
+    "name": "Hedonic vs Eudemonic Happiness",
+    "chapter": 4,
+    "prereqs": [
+      "self_awareness"
+    ],
+    "keywords": [
+      "hedonic",
+      "eudemonic",
+      "carnival",
+      "university",
+      "weight room",
+      "pleasure",
+      "virtue",
+      "flourishing",
+      "adam I",
+      "adam II"
+    ],
+    "description": "Hedonic = pleasure/novelty-oriented (life as a carnival). Eudemonic = virtue/growth-oriented (life as a university or weight room). Eudemonic produces deeper lasting wellbeing. Connected to Adam II (roots/character) vs Adam I (branches/accomplishment)."
+  },
+  "moral_relativism": {
+    "name": "Moral Relativism (Koukl's Critique)",
+    "chapter": 1,
+    "prereqs": [
+      "ethical_frameworks"
+    ],
+    "keywords": [
+      "relativism",
+      "koukl",
+      "objective",
+      "universal",
+      "critique",
+      "good",
+      "evil",
+      "tolerance"
+    ],
+    "description": "Koukl's two key flaws: (1) relativists cannot logically evaluate others' moral actions, (2) relativists cannot consistently make claims about good or evil. Internal contradiction: they want to say tolerance is good but their framework forbids universal moral claims."
+  },
+  "company_ethics_levels": {
+    "name": "Company Ethics Levels (A-F Framework)",
+    "chapter": 2,
+    "prereqs": [
+      "ethical_frameworks"
+    ],
+    "keywords": [
+      "a-level",
+      "b-level",
+      "c-level",
+      "d-level",
+      "f-level",
+      "minimum",
+      "above average",
+      "sam",
+      "jackets",
+      "quality"
+    ],
+    "description": "Tiered framework for evaluating company ethical behavior. A = exceptional, proactive ethics. B = above average, good practices. C = meets minimum standards/advertised guarantee. D = below standard. F = actively harmful. Sam's jacket company went from B (high quality, customer-focused) to C (meets only the minimum guarantee)."
   }
 }
