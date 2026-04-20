@@ -127,8 +127,9 @@ CREATE TABLE IF NOT EXISTS fsrs_state (
 
 -- Study sessions
 CREATE TABLE IF NOT EXISTS sessions (
-    id                 TEXT PRIMARY KEY,
+    id                 INTEGER PRIMARY KEY AUTOINCREMENT,
     user_id            TEXT,
+    mode               TEXT,
     started_at         DATETIME DEFAULT CURRENT_TIMESTAMP,
     ended_at           DATETIME,
     questions_answered INTEGER DEFAULT 0,
