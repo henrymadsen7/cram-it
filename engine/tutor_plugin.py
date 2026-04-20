@@ -12,7 +12,7 @@ from pathlib import Path
 
 import chromadb
 from chromadb.utils.embedding_functions import SentenceTransformerEmbeddingFunction
-from fsrs import Scheduler, Card, Rating
+from fsrs import FSRS as Scheduler, Card, Rating
 
 # === PATHS ===
 # Configurable via CRAM_IT_DATA_DIR env var; defaults to ./data/ relative to project root
